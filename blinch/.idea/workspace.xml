@@ -2,16 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b6e52b-7eb8-4fc7-834d-04dabb9522e6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/BlinchAppointment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/BlinchController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/CheckinRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/CheckinResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/DefaultResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/HistoryResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LoginRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LoginResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LogoutRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LogoutResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/MvcConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/NotYetImplementedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/PersonRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/RegisterRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/RegisterResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/StatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/UserNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/WebSecurityConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/model/Person.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/index.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/messages.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.counts.db.a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.counts.db.b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.names" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.names.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.labels" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.labels.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.arrays" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.arrays.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.keys" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.keys.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.strings.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipgroupstore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipgroupstore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipstore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipstore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.names" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.names.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.schemastore.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.schemastore.db.id" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.transaction.db.0" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.transaction.db.1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/schema/label/lucene/segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/schema/label/lucene/segments_1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/store_lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/blinch-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/build/libs/blinch-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/libs/blinch-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/build/libs/blinch-0.0.1-SNAPSHOT.jar.original" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hello.db/neostore" afterPath="$PROJECT_DIR$/target/hello.db/neostore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hello.db/messages.log" afterPath="$PROJECT_DIR$/target/hello.db/messages.log" />
     </list>
     <ignored path="blinch.iws" />
@@ -207,11 +268,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.6149341">
+              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -227,10 +288,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.68441063">
+            <state vertical-scroll-proportion="-20.0">
               <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding />
             </state>
@@ -793,6 +854,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/dao/PersonDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/main/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -807,6 +869,9 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1680" />
@@ -1103,7 +1168,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.blinch [bootRun]">
+  <component name="RunManager" selected="Gradle.blinch [clean]">
     <configuration default="false" name="blinch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1153,6 +1218,42 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="module3" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="blinch [bootRepackage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRepackage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="blinch [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1574,16 +1675,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Gradle.blinch [build]" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.blinch [bootRun]" />
       <item index="2" class="java.lang.String" itemvalue="Application.SayHello" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.blinch [bootRepackage]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.blinch [clean]" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.SayHello" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.blinch [bootRun]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.blinch [build]" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.blinch [clean]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.blinch [bootRepackage]" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SayHello" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.blinch [bootRun]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.blinch [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -1601,12 +1706,12 @@
       <workItem from="1452300099788" duration="2912000" />
       <workItem from="1452315613842" duration="7816000" />
       <workItem from="1452712500436" duration="27000" />
-      <workItem from="1452726244995" duration="8021000" />
+      <workItem from="1452726244995" duration="8427000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25192000" />
+    <option name="totallyTimeSpent" value="25598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1617,12 +1722,12 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327551" sideWeight="0.495116" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30306122" sideWeight="0.3021978" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22755101" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13877551" sideWeight="0.6978022" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2744898" sideWeight="0.6978022" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4030612" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916972" sideWeight="0.49487555" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916972" sideWeight="0.49487555" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2051,14 +2156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2091,8 +2188,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68441063">
+        <state vertical-scroll-proportion="-20.0">
           <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6149341">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
           <folding />
         </state>
       </provider>

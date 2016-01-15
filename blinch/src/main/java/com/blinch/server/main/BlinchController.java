@@ -2,6 +2,7 @@ package com.blinch.server.main;
 
 import com.blinch.server.exceptions.NotYetImplementedException;
 import com.blinch.server.exceptions.UserNotFoundException;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -70,6 +71,9 @@ public class BlinchController {
         throw new NotYetImplementedException("not yet implemented");
     }
 
+
+    // TODO: If authorization concept is applied.
+//    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @RequestMapping(value = "/v1/history")
     public HistoryResponse history() {
 

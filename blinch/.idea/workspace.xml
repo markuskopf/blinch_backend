@@ -2,78 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b6e52b-7eb8-4fc7-834d-04dabb9522e6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/Application.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/BlinchAppointment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/BlinchController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/CheckinRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/CheckinResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/DefaultResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/HistoryResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LoginRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LoginResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LogoutRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/LogoutResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/MvcConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/NotYetImplementedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/PersonRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/RegisterRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/RegisterResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/StatusResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/UserNotFoundException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/main/WebSecurityConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/classes/main/com/blinch/server/model/Person.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/messages.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.counts.db.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.counts.db.b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.names" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.labeltokenstore.db.names.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.labels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.nodestore.db.labels.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.arrays" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.arrays.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.keys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.index.keys.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.propertystore.db.strings.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipgroupstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipgroupstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshipstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.names" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.relationshiptypestore.db.names.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.schemastore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.schemastore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.transaction.db.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/neostore.transaction.db.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/schema/label/lucene/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/schema/label/lucene/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/libs/target/hello.db/store_lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/hello.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/home.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/resources/main/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/NotYetImplementedException.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/NotYetImplementedException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/UserNotFoundException.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/UserNotFoundException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hello.db/neostore" afterPath="$PROJECT_DIR$/target/hello.db/neostore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/hello.db/messages.log" afterPath="$PROJECT_DIR$/target/hello.db/messages.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/BlinchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/main/BlinchController.java" />
     </list>
     <ignored path="blinch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -208,10 +145,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/BlinchController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -246,10 +181,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserNotFoundException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/UserNotFoundException.java">
+      <file leaf-file-name="UserNotFoundException.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/UserNotFoundException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.2393617">
               <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -268,10 +203,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6149341">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding />
             </state>
@@ -291,8 +226,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0">
-              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            <state vertical-scroll-proportion="-22.222221">
+              <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -1076,6 +1011,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exceptions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -1157,7 +1122,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../blinchapp_backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../REST_BOOK_SAMPLES/B04788_Code/B04788_02_code" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1168,7 +1133,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.blinch [clean]">
+  <component name="RunManager" selected="Gradle.blinch [build]">
     <configuration default="false" name="blinch [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1706,16 +1671,16 @@
       <workItem from="1452300099788" duration="2912000" />
       <workItem from="1452315613842" duration="7816000" />
       <workItem from="1452712500436" duration="27000" />
-      <workItem from="1452726244995" duration="8427000" />
+      <workItem from="1452726244995" duration="10670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25598000" />
+    <option name="totallyTimeSpent" value="27841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1724,7 +1689,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30306122" sideWeight="0.3021978" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22755101" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2744898" sideWeight="0.6978022" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20408164" sideWeight="0.6978022" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4030612" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21916972" sideWeight="0.49487555" order="2" side_tool="false" content_ui="combo" />
@@ -2104,7 +2069,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/NotYetImplementedException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/NotYetImplementedException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
@@ -2122,29 +2087,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/RegisterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/RegisterResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/UserNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2176,29 +2123,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/RegisterRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/BlinchController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        <state vertical-scroll-proportion="-22.222221">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/main/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/UserNotFoundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6149341">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.2393617">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

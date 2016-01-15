@@ -1,5 +1,7 @@
 package com.blinch.server.main;
 
+import com.blinch.server.exceptions.NotYetImplementedException;
+import com.blinch.server.exceptions.UserNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

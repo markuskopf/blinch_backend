@@ -1,8 +1,8 @@
-package com.blinch.server.main;
+package com.blinch.server.service;
 
 import java.util.List;
 
-import com.blinch.server.model.Person;
+import com.blinch.server.domain.Person;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;

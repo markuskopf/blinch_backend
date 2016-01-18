@@ -1,4 +1,6 @@
-package com.blinch.server.main;
+package com.blinch.server.domain;
+
+import com.blinch.server.domain.DefaultResponse;
 
 /**
  * Created by markuskopf on 13/01/16.

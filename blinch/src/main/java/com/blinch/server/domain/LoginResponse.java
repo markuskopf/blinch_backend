@@ -1,4 +1,4 @@
-package com.blinch.server.main;
+package com.blinch.server.domain;
 
 /**
  * Created by markuskopf on 13/01/16.

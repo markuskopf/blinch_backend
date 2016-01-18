@@ -1,4 +1,4 @@
-package com.blinch.server.model;
+package com.blinch.server.domain;
 
 import org.springframework.data.neo4j.annotation.GraphId;
 import org.springframework.data.neo4j.annotation.NodeEntity;

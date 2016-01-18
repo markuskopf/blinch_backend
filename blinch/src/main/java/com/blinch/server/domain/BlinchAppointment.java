@@ -1,4 +1,4 @@
-package com.blinch.server.main;
+package com.blinch.server.domain;
 
 import java.util.Date;
 

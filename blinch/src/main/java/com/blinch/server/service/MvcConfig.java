@@ -1,4 +1,4 @@
-package com.blinch.server.main;
+package com.blinch.server.service;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

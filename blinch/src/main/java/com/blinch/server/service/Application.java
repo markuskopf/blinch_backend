@@ -1,13 +1,10 @@
-package com.blinch.server.main;
+package com.blinch.server.service;
 
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.factory.GraphDatabaseFactory;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.neo4j.config.EnableNeo4jRepositories;
 import org.springframework.data.neo4j.config.Neo4jConfiguration;
 

@@ -1,8 +1,8 @@
-package com.blinch.server.main;
+package com.blinch.server.controller;
 
+import com.blinch.server.domain.*;
 import com.blinch.server.exceptions.NotYetImplementedException;
 import com.blinch.server.exceptions.UserNotFoundException;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -3,7 +3,6 @@ package com.blinch.server.controller;
 import com.blinch.server.domain.*;
 import com.blinch.server.exeption.NotYetImplementedException;
 import com.blinch.server.exeption.UserNotFoundException;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BlinchController {
 
-    @RequestMapping(value = "/v1/status")
+    @RequestMapping(value = "/api/v1/status")
     public StatusResponse status() {
         final StatusResponse response = new StatusResponse();
         response.setMessage("Blinch status: Up and running.... ;)");
@@ -24,7 +23,7 @@ public class BlinchController {
         return response;
     }
 
-    @RequestMapping(value = "/v1/statusX")
+    @RequestMapping(value = "/api/v1/status")
     public StatusResponse status2() {
         final StatusResponse response = new StatusResponse();
         response.setMessage("CustomerController service is running...)");
@@ -33,7 +32,7 @@ public class BlinchController {
         return response;
     }
 
-    @RequestMapping(value = "/v1/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/login", method = RequestMethod.POST)
     public LoginResponse login(@RequestBody LoginRequest request) {
 
         if (!request.getMail().equals("user")) {
@@ -47,7 +46,7 @@ public class BlinchController {
     }
 
 
-    @RequestMapping(value = "/v1/logout", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/logout", method = RequestMethod.POST)
     public LogoutResponse logout(@RequestBody LoginRequest request) {
 
         final LogoutResponse logoutResponse = new LogoutResponse();
@@ -58,7 +57,7 @@ public class BlinchController {
     }
 
 
-    @RequestMapping(value = "/v1/checkin", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/checkin", method = RequestMethod.POST)
     public CheckinResponse checkin(@RequestBody CheckinRequest request) {
 
         CheckinResponse response = new CheckinResponse();
@@ -69,12 +68,12 @@ public class BlinchController {
         return response;
     }
 
-    @RequestMapping(value = "/v1/checkout", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/checkout", method = RequestMethod.POST)
     public void checkout() {
         throw new NotYetImplementedException("not yet implemented");
     }
 
-    @RequestMapping(value = "/v1/lotteryimages", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/lotteryimages", method = RequestMethod.POST)
     public void lotteryimages() {
         throw new NotYetImplementedException("not yet implemented");
     }
@@ -82,7 +81,7 @@ public class BlinchController {
 
     // TODO: If authorization concept is applied.
 //    @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @RequestMapping(value = "/v1/history")
+    @RequestMapping(value = "/api/v1/history")
     public HistoryResponse history() {
 
         final HistoryResponse response = new HistoryResponse();
@@ -112,13 +111,13 @@ public class BlinchController {
         return  response;
     }
 
-    @RequestMapping(value = "/v1/accounts", method = RequestMethod.GET)
+    @RequestMapping(value = "/api/v1/accounts", method = RequestMethod.GET)
     public void account() {
         throw new NotYetImplementedException("not yet implemented");
     }
 
 
-    @RequestMapping(value = "/v1/registration", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/registration", method = RequestMethod.POST)
     public RegisterResponse registration(@RequestBody RegisterRequest request) {
         RegisterResponse response = new RegisterResponse();
         response.setStatus(200);

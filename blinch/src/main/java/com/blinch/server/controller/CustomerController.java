@@ -1,14 +1,11 @@
 package com.blinch.server.controller;
 
 import com.blinch.server.domain.CustomerDTO;
-import com.blinch.server.domain.StatusResponse;
 import com.blinch.server.exeption.UserNotFoundException;
 import com.blinch.server.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 
 /**
@@ -22,15 +19,6 @@ public class CustomerController {
     @Autowired
     CustomerController(AccountService service) {
         this.service = service;
-    }
-
-    @RequestMapping(value = "/api/v1/status2")
-    public StatusResponse status() {
-        final StatusResponse response = new StatusResponse();
-        response.setMessage("CustomerController service is running...)");
-        response.setStatus(200);
-
-        return response;
     }
 
     @RequestMapping(value = "/api/v1/customer", method = RequestMethod.POST)

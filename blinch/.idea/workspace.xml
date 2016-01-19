@@ -2,145 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23b6e52b-7eb8-4fc7-834d-04dabb9522e6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mongodb_mongo_java_driver_2_13_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_mongodb_1_3_1_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_mongodb_1_8_2_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/Server.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/Customer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/CustomerRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/AccountService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/MongoDBAccountService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_fge_btf_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_fge_jackson_coreutils_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_fge_json_patch_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_fge_msg_simple_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_guava_guava_16_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_io_commons_io_2_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_opencsv_opencsv_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_lucene_lucene_core_3_6_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjrt_1_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_8_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_atteo_evo_inflector_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mockito_mockito_core_1_10_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_consistency_check_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_csv_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_compiler_1_9_2_0_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_compiler_2_0_2_0_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_compiler_2_1_2_1_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_compiler_2_2_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_cypher_dsl_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_graph_algo_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_graph_matching_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_io_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_jmx_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_kernel_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_lucene_index_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_primitive_collections_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_udc_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_neo4j_neo4j_unsafe_2_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_objenesis_objenesis_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_parboiled_parboiled_core_1_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_parboiled_parboiled_scala_2_10_1_1_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_scala_lang_scala_library_2_10_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_scala_lang_scala_reflect_2_10_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_rest_1_3_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_test_1_3_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_neo4j_3_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_rest_core_2_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_rest_webmvc_2_4_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_hateoas_spring_hateoas_0_19_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_4_2_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_test_4_2_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/Application.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/PersonRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/dbms/ssl/snakeoil.cert" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/dbms/ssl/snakeoil.key" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/index.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/messages.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neo4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.counts.db.a" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.counts.db.b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.labeltokenstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.labeltokenstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.labeltokenstore.db.names" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.labeltokenstore.db.names.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.nodestore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.nodestore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.nodestore.db.labels" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.nodestore.db.labels.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.arrays" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.arrays.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.index.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.index.keys" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.index.keys.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.strings" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.propertystore.db.strings.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshipgroupstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshipgroupstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshipstore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshipstore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshiptypestore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshiptypestore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshiptypestore.db.names" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.relationshiptypestore.db.names.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.schemastore.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.schemastore.db.id" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.10" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.11" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.12" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.13" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.14" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.15" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.16" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.17" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.18" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.19" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.20" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.21" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.22" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.23" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.4" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.6" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.7" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.8" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/neostore.transaction.db.9" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/schema/label/lucene/segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/schema/label/lucene/segments_1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/hello.db/store_lock" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/Person.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/CustomerDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/NotYetImplementedException.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/exeption/NotYetImplementedException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/exceptions/UserNotFoundException.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/exeption/UserNotFoundException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/MvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/MvcConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/service/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/WebSecurityConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blinch.iml" afterPath="$PROJECT_DIR$/blinch.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java" />
     </list>
     <ignored path="blinch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -250,112 +114,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlinchController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlinchController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state vertical-scroll-proportion="-1.8181819">
+              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MvcConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/MvcConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/domain/CustomerRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/service/AccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MongoDBAccountService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/service/MongoDBAccountService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.925926">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54545456">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#861#862#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="70" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="70" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/domain/CustomerDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="27" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -856,9 +633,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/CustomerRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/service/MongoDBAccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java" />
       </list>
     </option>
   </component>
@@ -1185,6 +962,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1777,12 +1584,12 @@
       <workItem from="1452726244995" duration="18404000" />
       <workItem from="1453078172048" duration="676000" />
       <workItem from="1453152766676" duration="2766000" />
-      <workItem from="1453160678016" duration="18688000" />
+      <workItem from="1453160678016" duration="19032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57705000" />
+    <option name="totallyTimeSpent" value="58049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1793,12 +1600,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327551" sideWeight="0.495116" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30306122" sideWeight="0.3021978" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="74" y="63" width="1480" height="850" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22755101" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39081633" sideWeight="0.6978022" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20816326" sideWeight="0.497558" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22466423" sideWeight="0.49487555" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22466423" sideWeight="0.49487555" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1812,7 +1620,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" x="74" y="63" width="1480" height="850" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1832,19 +1639,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java</url>
-          <line>19</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java</url>
-          <line>38</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java</url>
-          <line>38</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
@@ -1853,12 +1660,6 @@
           <line>26</line>
           <properties />
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/blinch/server/service/MongoDBAccountService.java</url>
@@ -1977,6 +1778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="834" column="45" selection-start-line="834" selection-start-column="45" selection-end-line="834" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2040,14 +1842,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/domain/StatusResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/domain/RegisterResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
@@ -2197,14 +1991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/service/MongoDBAccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.925926">
@@ -2239,25 +2025,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/domain/RegisterResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54545456">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/blinch/server/controller/BlinchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8181819">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>

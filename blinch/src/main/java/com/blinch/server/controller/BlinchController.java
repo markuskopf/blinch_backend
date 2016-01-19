@@ -1,8 +1,8 @@
 package com.blinch.server.controller;
 
 import com.blinch.server.domain.*;
-import com.blinch.server.exceptions.NotYetImplementedException;
-import com.blinch.server.exceptions.UserNotFoundException;
+import com.blinch.server.exeption.NotYetImplementedException;
+import com.blinch.server.exeption.UserNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * Created by markuskopf on 13/01/16.
  */
-@Component
 @RestController
 public class BlinchController {
 
@@ -20,6 +19,15 @@ public class BlinchController {
     public StatusResponse status() {
         final StatusResponse response = new StatusResponse();
         response.setMessage("Blinch status: Up and running.... ;)");
+        response.setStatus(200);
+
+        return response;
+    }
+
+    @RequestMapping(value = "/v1/statusX")
+    public StatusResponse status2() {
+        final StatusResponse response = new StatusResponse();
+        response.setMessage("CustomerController service is running...)");
         response.setStatus(200);
 
         return response;

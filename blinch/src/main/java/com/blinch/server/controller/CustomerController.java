@@ -12,6 +12,7 @@ import javax.validation.Valid;
  * Created by markuskopf on 18/01/16.
  */
 @RestController
+@RequestMapping("/api/v1/customers")
 public class CustomerController {
 
     private final AccountService service;
@@ -21,23 +22,23 @@ public class CustomerController {
         this.service = service;
     }
 
-    @RequestMapping(value = "/api/v1/customer", method = RequestMethod.POST)
+    @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     CustomerDTO create(@RequestBody @Valid CustomerDTO customerEntry) {
         return service.create(customerEntry);
     }
 
-    @RequestMapping(value = "/api/v1/customer/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
     CustomerDTO delete(@PathVariable("id") String id) {
         return service.delete(id);
     }
 
-    @RequestMapping(value = "/api/v1/customer/{lastName}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{lastName}", method = RequestMethod.GET)
     CustomerDTO findByLastName(@PathVariable("lastName") String lastName) {
         return service.findByLastName(lastName);
     }
 
-    @RequestMapping(value = "/api/v1/customer/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
     CustomerDTO findById(@PathVariable("id") String id) {
         return service.findById(id);
     }

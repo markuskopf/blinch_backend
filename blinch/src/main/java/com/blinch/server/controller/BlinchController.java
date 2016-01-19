@@ -23,15 +23,6 @@ public class BlinchController {
         return response;
     }
 
-    @RequestMapping(value = "/api/v1/status")
-    public StatusResponse status2() {
-        final StatusResponse response = new StatusResponse();
-        response.setMessage("CustomerController service is running...)");
-        response.setStatus(200);
-
-        return response;
-    }
-
     @RequestMapping(value = "/api/v1/login", method = RequestMethod.POST)
     public LoginResponse login(@RequestBody LoginRequest request) {
 

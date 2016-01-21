@@ -13,26 +13,25 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class Server {
 
-//    public static final String DB_NAME = "blinchdev";
-//    public static final String PERSON_COLLECTION = "Person";
+//    public static final String DB_NAME = "test";
+//    public static final String PERSON_COLLECTION = "Customer";
 //    public static final String MONGO_HOST = "localhost";
 //    public static final int MONGO_PORT = 27017;
 
     public static void main(String... args) throws Throwable {
         SpringApplication.run(Server.class, args);
-
+//
 //        try {
 //
 //            MongoClient mongo = new MongoClient(MONGO_HOST, MONGO_PORT);
 //
 //            MongoOperations mongoOps = new MongoTemplate(mongo, DB_NAME);
 //
-//            Person p = new Person("111", "Markus", "Berlin, Germany");
+//            Customer p = new Customer("Manual", "Created");
 //
 //            mongoOps.insert(p, PERSON_COLLECTION);
 //
-//            Person p1 = mongoOps.findOne(new Query(Criteria.where("name").is("Markus")), Person.class, PERSON_COLLECTION);
-//            List allPersonsInsideDb = mongoOps.findAll(Person.class);
+//            Customer p1 = mongoOps.findOne(new Query(Criteria.where("firstName").is("Manual")), Customer.class, PERSON_COLLECTION);
 //
 //            //System.out.println(p1);
 //            //System.out.println("Stop");

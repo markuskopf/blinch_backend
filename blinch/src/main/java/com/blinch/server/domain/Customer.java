@@ -2,6 +2,8 @@ package com.blinch.server.domain;
 
 import org.springframework.data.annotation.Id;
 
+import javax.validation.constraints.Size;
+
 /**
  * Created by markuskopf on 18/01/16.
  */
@@ -10,9 +12,19 @@ public class Customer {
     @Id
     private String id;
 
+    @Size(min = 2, max = 1000)
     private String firstName;
 
+    @Size(min = 2, max = 1000)
     private String lastName;
+
+    private String emailAddress;
+
+    private String phone;
+
+    private String company;
+
+    private String password;
 
     public Customer() {}
 
@@ -50,5 +62,29 @@ public class Customer {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

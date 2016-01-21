@@ -8,5 +8,11 @@
 
 <h1>Registration!</h1>
 
+<form action="#" th:action="@{/processForm}" th:object="${foo}" method="post">
+    Bar name: <input type="text" th:field="*{bar}" />
+    <input type="submit" value="Register"/>
+</form>
+
+
 </body>
 </html>

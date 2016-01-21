@@ -63,5 +63,8 @@
     <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.data:spring-data-commons:1.11.2.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.springframework.boot:spring-boot-starter:1.1.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.webjars:jquery:2.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.webjars:angularjs:1.4.8" level="project" />
+    <orderEntry type="library" name="Gradle: org.webjars:bootstrap:3.2.0" level="project" />
   </component>
 </module>

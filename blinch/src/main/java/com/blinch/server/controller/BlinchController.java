@@ -23,7 +23,7 @@ public class BlinchController {
         return response;
     }
 
-    @RequestMapping(value = "/api/v1/login", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/v1/login2", method = RequestMethod.POST)
     public LoginResponse login(@RequestBody LoginRequest request) {
 
         if (!request.getMail().equals("user")) {

@@ -1,8 +1,8 @@
-package com.blinch.server.service;
+package com.blinch.server.service.account;
 
-import com.blinch.server.domain.Customer;
-import com.blinch.server.domain.CustomerDTO;
-import com.blinch.server.domain.CustomerRepository;;
+import com.blinch.server.domain.customer.Customer;
+import com.blinch.server.domain.customer.CustomerDTO;
+import com.blinch.server.domain.customer.CustomerRepository;;
 import com.blinch.server.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

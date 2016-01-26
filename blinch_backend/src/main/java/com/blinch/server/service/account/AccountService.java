@@ -1,6 +1,6 @@
-package com.blinch.server.service;
+package com.blinch.server.service.account;
 
-import com.blinch.server.domain.CustomerDTO;
+import com.blinch.server.domain.customer.CustomerDTO;
 
 /**
  * Created by markuskopf on 18/01/16.

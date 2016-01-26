@@ -1,8 +1,8 @@
 package com.blinch.server.controller;
 
-import com.blinch.server.domain.CustomerDTO;
+import com.blinch.server.domain.customer.CustomerDTO;
 import com.blinch.server.exception.UserNotFoundException;
-import com.blinch.server.service.AccountService;
+import com.blinch.server.service.account.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

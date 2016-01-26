@@ -1,4 +1,4 @@
-package com.blinch.server.domain;
+package com.blinch.server.domain.customer;
 
 import org.hibernate.validator.constraints.NotEmpty;
 

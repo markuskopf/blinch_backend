@@ -1,4 +1,4 @@
-package com.blinch.server.domain;
+package com.blinch.server.domain.customer;
 
 import org.springframework.data.annotation.Id;
 
@@ -24,6 +24,12 @@ public class Customer {
     private String phone;
 
     private String company;
+
+    private String street;
+
+    private String city;
+
+    private String country;
 
     @Size(min = 5, max = 20)
     private String password;

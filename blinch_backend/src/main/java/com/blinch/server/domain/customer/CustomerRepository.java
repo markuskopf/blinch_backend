@@ -1,4 +1,4 @@
-package com.blinch.server.domain;
+package com.blinch.server.domain.customer;
 
 import org.springframework.data.repository.Repository;
 
@@ -8,7 +8,6 @@ import java.util.Optional;
  * Created by markuskopf on 18/01/16.
  */
 public interface CustomerRepository extends Repository<Customer, String> {
-
 
     Optional<Customer> findByFirstName(String firstName);
 

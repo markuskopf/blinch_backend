@@ -1,6 +1,6 @@
 package com.blinch.server.controller;
 
-import com.blinch.server.domain.Customer;
+import com.blinch.server.domain.customer.Customer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;

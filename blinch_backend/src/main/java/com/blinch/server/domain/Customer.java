@@ -18,12 +18,14 @@ public class Customer {
     @Size(min = 2, max = 1000)
     private String lastName;
 
+    @Size(min = 2, max = 1000)
     private String emailAddress;
 
     private String phone;
 
     private String company;
 
+    @Size(min = 5, max = 20)
     private String password;
 
     public Customer() {}
@@ -86,5 +88,13 @@ public class Customer {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

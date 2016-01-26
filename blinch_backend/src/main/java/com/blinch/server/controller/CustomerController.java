@@ -26,6 +26,14 @@ public class CustomerController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     CustomerDTO create(@RequestBody @Valid CustomerDTO customerEntry) {
+
+        // check in the DB if a similar user is already created
+        // if not creat and save
+        // return the same data
+
+
+
+
         return service.create(customerEntry);
     }
 

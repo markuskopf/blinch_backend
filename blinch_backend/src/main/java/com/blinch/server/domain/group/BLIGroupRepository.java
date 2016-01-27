@@ -1,6 +1,6 @@
 package com.blinch.server.domain.group;
 
-import org.springframework.data.repository.Repository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
@@ -8,7 +8,7 @@ import java.util.Optional;
  * Created by markuskopf on 26/01/16.
  */
 
-public interface BLIGroupRepository extends Repository<BLIGroup, String> {
+public interface BLIGroupRepository extends MongoRepository<BLIGroup, String> {
 
     Optional<BLIGroup> findByDomainName(String domainName);
 

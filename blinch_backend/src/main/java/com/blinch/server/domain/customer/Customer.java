@@ -1,6 +1,8 @@
 package com.blinch.server.domain.customer;
 
+import com.blinch.server.domain.group.BLIGroup;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import javax.validation.constraints.Size;
 
@@ -30,6 +32,9 @@ public class Customer {
     private String city;
 
     private String country;
+
+    @DBRef
+    private BLIGroup bliGroup;
 
     @Size(min = 5, max = 20)
     private String password;

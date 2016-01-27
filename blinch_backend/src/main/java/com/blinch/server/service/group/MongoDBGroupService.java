@@ -1,5 +1,6 @@
 package com.blinch.server.service.group;
 
+import com.blinch.server.domain.customer.CustomerRepository;
 import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupDTO;
 import com.blinch.server.domain.group.BLIGroupRepository;
@@ -15,18 +16,20 @@ import java.util.Optional;
 @Service
 final class MongoDBGroupService implements BLIGroupService {
 
-    private final BLIGroupRepository repository;
+    private final BLIGroupRepository groupRepository;
+    private final CustomerRepository customerRepository;
 
     @Autowired
-    MongoDBGroupService(BLIGroupRepository repository) {
-        this.repository = repository;
+    MongoDBGroupService(BLIGroupRepository repository, CustomerRepository customerRepository) {
+        this.groupRepository = repository;
+        this.customerRepository = customerRepository;
     }
 
     @Override
     public BLIGroupDTO create(BLIGroupDTO customer) {
 
         BLIGroup persistend = new BLIGroup(customer.getDomainName(), customer.getGroupName(),customer.getCity(), customer.getCountry());
-        persistend = repository.save(persistend);
+        persistend = groupRepository.save(persistend);
 
         return convertToDTO(persistend);
     }
@@ -47,17 +50,17 @@ final class MongoDBGroupService implements BLIGroupService {
     }
 
     private BLIGroup findGroupByGroupName(String groupName) {
-        Optional<BLIGroup> result = repository.findByGroupName(groupName);
+        Optional<BLIGroup> result = groupRepository.findByGroupName(groupName);
         return result.orElseThrow(() -> new UserNotFoundException(groupName));
     }
 
     private BLIGroup findGroupEntityByDomain(String domainName) {
-        Optional<BLIGroup> result = repository.findByDomainName(domainName);
+        Optional<BLIGroup> result = groupRepository.findByDomainName(domainName);
         return result.orElseThrow(() -> new UserNotFoundException(domainName));
     }
 
     private BLIGroup findGroupEntityById(String id) {
-        Optional<BLIGroup> result = repository.findById(id);
+        Optional<BLIGroup> result = groupRepository.findById(id);
         return result.orElseThrow(() -> new UserNotFoundException(id));
     }
 

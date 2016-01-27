@@ -68,7 +68,7 @@ final class MongoDBAccountService implements AccountService{
     }
 
     private Customer findCustomerById(String id) {
-        Optional<Customer> result = repository.findOne(id);
+        Optional<Customer> result = null; // repository.findOne(id);
         return result.orElseThrow(() -> new UserNotFoundException(id));
     }
 

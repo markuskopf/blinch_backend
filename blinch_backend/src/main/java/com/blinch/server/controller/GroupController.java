@@ -14,7 +14,7 @@ import javax.validation.Valid;
  */
 
 @RestController
-@RequestMapping("/api/v1/group")
+@RequestMapping("/api/v1/groups")
 public class GroupController {
 
     private final BLIGroupService service;

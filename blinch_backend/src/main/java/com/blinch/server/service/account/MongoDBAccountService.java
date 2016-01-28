@@ -3,6 +3,8 @@ package com.blinch.server.service.account;
 import com.blinch.server.domain.customer.Customer;
 import com.blinch.server.domain.customer.CustomerDTO;
 import com.blinch.server.domain.customer.CustomerRepository;;
+import com.blinch.server.domain.group.BLIGroup;
+import com.blinch.server.domain.group.BLIGroupRepository;
 import com.blinch.server.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,14 +19,37 @@ final class MongoDBAccountService implements AccountService{
 
     private final CustomerRepository repository;
 
+    private final BLIGroupRepository groupRepository;
+
     @Autowired
-    MongoDBAccountService(CustomerRepository repository) {
+    public MongoDBAccountService(CustomerRepository repository, BLIGroupRepository groupRepository) {
         this.repository = repository;
+        this.groupRepository = groupRepository;
     }
 
     @Override
     public CustomerDTO create(CustomerDTO customer) {
-        Customer persisted = new Customer(customer.getFirstName(), customer.getLastName());
+
+        String emailOfCustomer = customer.getEmailAddress();
+        String domain =  emailOfCustomer.substring((emailOfCustomer.lastIndexOf("@") + 1));
+
+        // search by domain of the email inside mongo
+        // if domain found create the customer with a link to the company
+        // if not return error
+
+        Optional<BLIGroup> groupOfCustomer = this.groupRepository.findByDomainName(domain);
+
+        BLIGroup group = groupOfCustomer.get();
+        if (group == null) {
+            // throw information that first a valid group must be created....
+
+            return null;
+        }
+
+        Customer persisted = new Customer(customer.getFirstName(), customer.getLastName(), customer.getEmailAddress(), customer.getPhone(), customer.getCompany());
+        persisted.setBliGroup(group);
+
+
         persisted = repository.save(persisted);
 
         return convertToDTO(persisted);

@@ -1,7 +1,5 @@
 package com.blinch.server.service.group;
 
-import com.blinch.server.domain.customer.Customer;
-import com.blinch.server.domain.customer.CustomerRepository;
 import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupDTO;
 import com.blinch.server.domain.group.BLIGroupRepository;
@@ -19,19 +17,13 @@ final class MongoDBGroupService implements BLIGroupService {
 
     private final BLIGroupRepository groupRepository;
 
-    private final CustomerRepository customerRepository;
-
     @Autowired
-    MongoDBGroupService(BLIGroupRepository repository, CustomerRepository customerRepository) {
+    MongoDBGroupService(BLIGroupRepository repository) {
         this.groupRepository = repository;
-        this.customerRepository = customerRepository;
     }
 
     @Override
     public BLIGroupDTO create(BLIGroupDTO customer) {
-        // TODO: Remove testing of repo wiring.
-        Optional<Customer> tmp1 = this.customerRepository.findByLastName("Kopf");
-
         BLIGroup persistend = new BLIGroup(customer.getDomainName(), customer.getGroupName(),customer.getCity(), customer.getCountry());
         persistend = groupRepository.save(persistend);
 

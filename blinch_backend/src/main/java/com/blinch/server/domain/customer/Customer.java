@@ -41,9 +41,17 @@ public class Customer {
 
     public Customer() {}
 
-    public Customer(String firstName, String lastName) {
+    public Customer(String firstName, String lastName, String emailAddress, String phone, String company) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public void setBliGroup(BLIGroup blichGroup) throws IllegalArgumentException {
+        if (blichGroup != null) {
+            this.bliGroup = blichGroup;
+        } else {
+            throw new IllegalArgumentException("Group must not be null.");
+        }
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.blinch.server.controller;
 
 import com.blinch.server.domain.customer.CustomerDTO;
+import com.blinch.server.domain.group.BLIGroupRepository;
 import com.blinch.server.exception.UserNotFoundException;
 import com.blinch.server.service.account.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,14 +27,9 @@ public class CustomerController {
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     CustomerDTO create(@RequestBody @Valid CustomerDTO customerEntry) {
-
         // check in the DB if a similar user is already created
         // if not creat and save
         // return the same data
-
-
-
-
         return service.create(customerEntry);
     }
 

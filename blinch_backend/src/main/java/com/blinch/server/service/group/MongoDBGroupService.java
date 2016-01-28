@@ -1,5 +1,6 @@
 package com.blinch.server.service.group;
 
+import com.blinch.server.domain.customer.Customer;
 import com.blinch.server.domain.customer.CustomerRepository;
 import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupDTO;
@@ -17,6 +18,7 @@ import java.util.Optional;
 final class MongoDBGroupService implements BLIGroupService {
 
     private final BLIGroupRepository groupRepository;
+
     private final CustomerRepository customerRepository;
 
     @Autowired
@@ -27,6 +29,8 @@ final class MongoDBGroupService implements BLIGroupService {
 
     @Override
     public BLIGroupDTO create(BLIGroupDTO customer) {
+        // TODO: Remove testing of repo wiring.
+        Optional<Customer> tmp1 = this.customerRepository.findByLastName("Kopf");
 
         BLIGroup persistend = new BLIGroup(customer.getDomainName(), customer.getGroupName(),customer.getCity(), customer.getCountry());
         persistend = groupRepository.save(persistend);

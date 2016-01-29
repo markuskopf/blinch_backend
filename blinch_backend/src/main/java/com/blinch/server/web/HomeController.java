@@ -1,4 +1,4 @@
-package com.blinch.server.controller;
+package com.blinch.server.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

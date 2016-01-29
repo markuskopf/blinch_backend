@@ -1,4 +1,4 @@
-package com.blinch.server.controller;
+package com.blinch.server.web;
 
 /**
  * Created by markuskopf on 28/01/16.

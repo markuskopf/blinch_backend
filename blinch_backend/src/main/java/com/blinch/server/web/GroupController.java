@@ -1,4 +1,4 @@
-package com.blinch.server.controller;
+package com.blinch.server.web;
 
 import com.blinch.server.domain.group.BLIGroupDTO;
 import com.blinch.server.exception.UserNotFoundException;

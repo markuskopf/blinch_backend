@@ -15,13 +15,13 @@ import java.util.HashSet;
  */
 
 @Service
-final public class MongoDBAppointmentService implements AppountmentService {
+final class AppointmentServiceImpl implements AppointmentService {
 
     final AppointmentRepository appointmentRepository;
     final CustomerRepository customerRepository;
 
     @Autowired
-    public MongoDBAppointmentService(AppointmentRepository appointmentRepository, CustomerRepository customerRepository) {
+    public AppointmentServiceImpl(AppointmentRepository appointmentRepository, CustomerRepository customerRepository) {
         this.appointmentRepository = appointmentRepository;
         this.customerRepository = customerRepository;
     }

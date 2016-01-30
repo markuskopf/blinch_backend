@@ -5,7 +5,8 @@ package com.blinch.server.web;
  */
 
 import com.blinch.server.domain.appointment.AppointmentDTO;
-import com.blinch.server.service.appointment.AppountmentService;
+
+import com.blinch.server.service.appointment.AppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -16,10 +17,10 @@ import javax.validation.Valid;
 @RequestMapping("/api/v1/appointments")
 public class AppointmentController {
 
-    final AppountmentService service;
+    final AppointmentService service;
 
     @Autowired
-    public AppointmentController(AppountmentService service) {
+    public AppointmentController(AppointmentService service) {
         this.service = service;
     }
 

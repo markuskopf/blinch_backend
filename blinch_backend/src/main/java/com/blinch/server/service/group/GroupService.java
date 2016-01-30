@@ -6,7 +6,7 @@ import com.blinch.server.domain.group.BLIGroupDTO;
 /**
  * Created by markuskopf on 26/01/16.
  */
-public interface BLIGroupService {
+public interface GroupService {
 
     BLIGroupDTO create(BLIGroupDTO customer);
 

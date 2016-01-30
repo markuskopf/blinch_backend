@@ -13,12 +13,12 @@ import java.util.Optional;
  * Created by markuskopf on 26/01/16.
  */
 @Service
-final class MongoDBGroupService implements BLIGroupService {
+final class GroupServiceImpl implements GroupService {
 
     private final BLIGroupRepository groupRepository;
 
     @Autowired
-    MongoDBGroupService(BLIGroupRepository repository) {
+    GroupServiceImpl(BLIGroupRepository repository) {
         this.groupRepository = repository;
     }
 

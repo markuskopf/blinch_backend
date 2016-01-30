@@ -2,7 +2,7 @@ package com.blinch.server.web;
 
 import com.blinch.server.domain.group.BLIGroupDTO;
 import com.blinch.server.exception.UserNotFoundException;
-import com.blinch.server.service.group.BLIGroupService;
+import com.blinch.server.service.group.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -17,10 +17,10 @@ import javax.validation.Valid;
 @RequestMapping("/api/v1/groups")
 public class GroupController {
 
-    private final BLIGroupService service;
+    private final GroupService service;
 
     @Autowired
-    public GroupController(BLIGroupService service) {
+    public GroupController(GroupService service) {
         this.service = service;
     }
 

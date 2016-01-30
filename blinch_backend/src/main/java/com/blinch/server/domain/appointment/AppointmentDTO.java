@@ -11,7 +11,6 @@ import java.util.HashSet;
  */
 public class AppointmentDTO {
 
-    @Id
     private String id;
 
     private HashSet<Customer> customers;

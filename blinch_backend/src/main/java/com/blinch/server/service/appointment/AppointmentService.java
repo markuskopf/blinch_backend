@@ -7,7 +7,7 @@ import com.blinch.server.domain.appointment.AppointmentDTO;
 /**
  * Created by markuskopf on 28/01/16.
  */
-public interface AppountmentService {
+public interface AppointmentService {
 
     AppointmentDTO create(AppointmentDTO appointment);
 

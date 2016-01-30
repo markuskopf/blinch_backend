@@ -29,8 +29,7 @@ public class Event {
 
     }
 
-    public Event(String id, BLIGroup group, Date date, long longitute, long latitude, String location) {
-        this.id = id;
+    public Event(BLIGroup group, Date date, long longitute, long latitude, String location) {
         this.group = group;
         this.date = date;
         this.longitute = longitute;

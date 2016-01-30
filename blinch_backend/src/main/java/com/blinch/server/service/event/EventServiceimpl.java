@@ -29,9 +29,9 @@ public class EventServiceImpl implements  EventService {
 
     @Override
     public EventDTO create(EventDTO event) {
-        BLIGroup groupForEvent = this.findGroupByGroupName(event.getGroup().getGroupName());
+        BLIGroup groupForEvent = this.findGroupByGroupName(event.getGroupName());
 
-        Event persisted = new Event("", groupForEvent, event.getDate(), event.getLongitute(), event.getLatitude(), event.getLocation());
+        Event persisted = new Event(groupForEvent, event.getDate(), event.getLongitute(), event.getLatitude(), event.getLocation());
         persisted = this.eventRepository.save(persisted);
 
         return convertToDTO(persisted);
@@ -51,6 +51,7 @@ public class EventServiceImpl implements  EventService {
     private EventDTO convertToDTO(Event event) {
         EventDTO eventDTO =  new EventDTO();
         eventDTO.setId(event.getId());
+        eventDTO.setGroupName(event.getGroup().getGroupName());
         eventDTO.setDate(event.getDate());
         eventDTO.setLatitude(event.getLatitude());
         eventDTO.setLongitute(event.getLongitute());

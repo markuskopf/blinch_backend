@@ -1,6 +1,5 @@
 package com.blinch.server.domain.event;
 
-import com.blinch.server.domain.group.BLIGroup;
 import org.hibernate.validator.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -12,10 +11,8 @@ public class EventDTO {
 
     private String id;
 
-    @NotEmpty
-    private BLIGroup group;
+    private String groupName;
 
-    @NotEmpty
     private Date date;
 
     private long longitute;
@@ -26,7 +23,6 @@ public class EventDTO {
     @Size(min = 1)
     private String location;
 
-
     public String getId() {
         return id;
     }
@@ -35,12 +31,12 @@ public class EventDTO {
         this.id = id;
     }
 
-    public BLIGroup getGroup() {
-        return group;
+    public String getGroupName() {
+        return groupName;
     }
 
-    public void setGroup(BLIGroup group) {
-        this.group = group;
+    public void setGroupName(String groupName) {
+        this.groupName = groupName;
     }
 
     public Date getDate() {

@@ -1,10 +1,12 @@
 package com.blinch.server.domain.customer;
 
+import com.blinch.server.domain.appointment.Appointment;
 import com.blinch.server.domain.group.BLIGroup;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import javax.validation.constraints.Size;
+import java.util.HashSet;
 
 /**
  * Created by markuskopf on 18/01/16.
@@ -35,6 +37,9 @@ public class Customer {
 
     @DBRef
     private BLIGroup bliGroup;
+
+    @DBRef
+    private HashSet<Appointment> appointments;
 
     @Size(min = 5, max = 20)
     private String password;
@@ -115,5 +120,13 @@ public class Customer {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public HashSet<Appointment> getAppointments() {
+        return appointments;
+    }
+
+    public void setAppointments(HashSet<Appointment> appointments) {
+        this.appointments = appointments;
     }
 }

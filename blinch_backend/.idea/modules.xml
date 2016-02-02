@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/blinch.iml" filepath="$PROJECT_DIR$/blinch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homepage-ui-service/homepage-ui-service.iml" filepath="$PROJECT_DIR$/homepage-ui-service/homepage-ui-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/matching-service/matching-service.iml" filepath="$PROJECT_DIR$/matching-service/matching-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-service/rest-service.iml" filepath="$PROJECT_DIR$/rest-service/rest-service.iml" />
     </modules>
   </component>
 </project>

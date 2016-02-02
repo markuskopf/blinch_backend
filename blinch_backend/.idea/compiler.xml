@@ -22,11 +22,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="blinch" />
+        <module name="matching-service" />
+        <module name="rest-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="blinch" target="1.8" />
+      <module name="homepage-ui-service" target="1.8" />
+      <module name="matching-service" target="1.8" />
+      <module name="rest-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

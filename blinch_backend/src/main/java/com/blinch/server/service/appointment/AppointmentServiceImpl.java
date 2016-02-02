@@ -3,8 +3,8 @@ package com.blinch.server.service.appointment;
 import com.blinch.server.domain.appointment.Appointment;
 import com.blinch.server.domain.appointment.AppointmentDTO;
 import com.blinch.server.domain.appointment.AppointmentRepository;
-import com.blinch.server.domain.customer.Customer;
-import com.blinch.server.domain.customer.CustomerRepository;
+import com.blinch.server.domain.customer.User;
+import com.blinch.server.domain.customer.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,10 +18,10 @@ import java.util.HashSet;
 final class AppointmentServiceImpl implements AppointmentService {
 
     final AppointmentRepository appointmentRepository;
-    final CustomerRepository customerRepository;
+    final UserRepository customerRepository;
 
     @Autowired
-    public AppointmentServiceImpl(AppointmentRepository appointmentRepository, CustomerRepository customerRepository) {
+    public AppointmentServiceImpl(AppointmentRepository appointmentRepository, UserRepository customerRepository) {
         this.appointmentRepository = appointmentRepository;
         this.customerRepository = customerRepository;
     }
@@ -29,9 +29,9 @@ final class AppointmentServiceImpl implements AppointmentService {
     @Override
     public AppointmentDTO create(AppointmentDTO appointment) {
 
-        HashSet<Customer> lunchPartners = new HashSet<Customer>();
+        HashSet<User> lunchPartners = new HashSet<User>();
 
-        for (Customer value : appointment.getCustomers()) {
+        for (User value : appointment.getCustomers()) {
             lunchPartners.add(this.customerRepository.findByLastName(value.getLastName()).get());
         }
 

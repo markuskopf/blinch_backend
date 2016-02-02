@@ -1,8 +1,10 @@
 package com.blinch.server.web;
 
-import com.blinch.server.domain.customer.CustomerDTO;
+import com.blinch.server.domain.customer.UserDTO;
 import com.blinch.server.exception.UserNotFoundException;
-import com.blinch.server.service.account.AccountService;
+import com.blinch.server.service.account.UserService;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,43 +15,46 @@ import javax.validation.Valid;
  * Created by markuskopf on 18/01/16.
  */
 @RestController
-@RequestMapping("/api/v1/customers")
-public class CustomerController {
+@RequestMapping("/api/v1/users")
+public class UserController {
 
-    private final AccountService service;
+    private final UserService service;
+
+    private static final Logger LOGGER = LogManager.getLogger(UserController.class);
 
     @Autowired
-    CustomerController(AccountService service) {
+    UserController(UserService service) {
         this.service = service;
     }
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    CustomerDTO create(@RequestBody @Valid CustomerDTO customerEntry) {
-        // check in the DB if a similar user is already created
-        // if not creat and save
-        // return the same data
+    UserDTO create(@RequestBody @Valid UserDTO customerEntry) {
         return service.create(customerEntry);
     }
 
     @RequestMapping(value="/{id}", method = RequestMethod.DELETE)
-    CustomerDTO delete(@PathVariable("id") String id) {
+    @ResponseStatus(value = HttpStatus.NO_CONTENT)
+    UserDTO delete(@PathVariable("id") String id) {
         return service.delete(id);
     }
 
     @RequestMapping(value = "/{lastName}", method = RequestMethod.GET)
-    CustomerDTO findByLastName(@PathVariable("lastName") String lastName) {
+    UserDTO findByLastName(@PathVariable("lastName") String lastName) {
         return service.findByLastName(lastName);
     }
 
     @RequestMapping(value = "/id/{id}", method = RequestMethod.GET)
-    CustomerDTO findById(@PathVariable("id") String id) {
+    UserDTO findById(@PathVariable("id") String id) {
         return service.findById(id);
     }
 
     @ExceptionHandler
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public void handleTodoNotFound(UserNotFoundException ex) {
+
+        LOGGER.info("User not found exception...", ex);
+
     }
 
 }

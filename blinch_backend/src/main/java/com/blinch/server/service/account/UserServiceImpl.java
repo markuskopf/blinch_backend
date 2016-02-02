@@ -1,8 +1,8 @@
 package com.blinch.server.service.account;
 
-import com.blinch.server.domain.customer.Customer;
-import com.blinch.server.domain.customer.CustomerDTO;
-import com.blinch.server.domain.customer.CustomerRepository;;
+import com.blinch.server.domain.customer.User;
+import com.blinch.server.domain.customer.UserDTO;
+import com.blinch.server.domain.customer.UserRepository;;
 import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupRepository;
 import com.blinch.server.exception.UserNotFoundException;
@@ -15,20 +15,20 @@ import java.util.Optional;
  * Created by markuskopf on 18/01/16.
  */
 @Service
-final class MongoDBAccountService implements AccountService{
+final class UserServiceImpl implements UserService {
 
-    private final CustomerRepository repository;
+    private final UserRepository repository;
 
     private final BLIGroupRepository groupRepository;
 
     @Autowired
-    public MongoDBAccountService(CustomerRepository repository, BLIGroupRepository groupRepository) {
+    public UserServiceImpl(UserRepository repository, BLIGroupRepository groupRepository) {
         this.repository = repository;
         this.groupRepository = groupRepository;
     }
 
     @Override
-    public CustomerDTO create(CustomerDTO customer) {
+    public UserDTO create(UserDTO customer) {
 
         String emailOfCustomer = customer.getEmailAddress();
         String domain =  emailOfCustomer.substring((emailOfCustomer.lastIndexOf("@") + 1));
@@ -46,7 +46,7 @@ final class MongoDBAccountService implements AccountService{
             return null;
         }
 
-        Customer persisted = new Customer(customer.getFirstName(), customer.getLastName(), customer.getEmailAddress(), customer.getPhone(), customer.getCompany());
+        User persisted = new User(customer.getFirstName(), customer.getLastName(), customer.getEmailAddress(), customer.getPhone(), customer.getCompany());
         persisted.setBliGroup(group);
 
 
@@ -56,49 +56,49 @@ final class MongoDBAccountService implements AccountService{
     }
 
     @Override
-    public CustomerDTO delete(String id) {
-        Customer deleted = findCustomerById(id);
+    public UserDTO delete(String id) {
+        User deleted = findCustomerById(id);
         repository.delete(deleted);
         return convertToDTO(deleted);
     }
 
 
     @Override
-    public CustomerDTO findByLastName(String lastName) {
-       Customer findByLastNameCustomer = findCustomerByLastName(lastName);
+    public UserDTO findByLastName(String lastName) {
+       User findByLastNameCustomer = findCustomerByLastName(lastName);
 
         return convertToDTO(findByLastNameCustomer);
     }
 
     @Override
-    public CustomerDTO findByFirstName(String firstName) {
-        Customer findByFirstNameCustomer = findCustomerByFirstName(firstName);
+    public UserDTO findByFirstName(String firstName) {
+        User findByFirstNameCustomer = findCustomerByFirstName(firstName);
 
         return convertToDTO(findByFirstNameCustomer);
     }
 
     @Override
-    public CustomerDTO findById(String id) {
+    public UserDTO findById(String id) {
         return convertToDTO(findCustomerById(id));
     }
 
-    private Customer findCustomerByLastName(String lastName) {
-        Optional<Customer> result = repository.findByLastName(lastName);
+    private User findCustomerByLastName(String lastName) {
+        Optional<User> result = repository.findByLastName(lastName);
         return result.orElseThrow(() -> new UserNotFoundException(lastName));
     }
 
-    private Customer findCustomerByFirstName(String firstName) {
-        Optional<Customer> result = repository.findByFirstName(firstName);
+    private User findCustomerByFirstName(String firstName) {
+        Optional<User> result = repository.findByFirstName(firstName);
         return result.orElseThrow(() -> new UserNotFoundException(firstName));
     }
 
-    private Customer findCustomerById(String id) {
-        Optional<Customer> result = null; // repository.findOne(id);
+    private User findCustomerById(String id) {
+        Optional<User> result = null; // repository.findOne(id);
         return result.orElseThrow(() -> new UserNotFoundException(id));
     }
 
-    private CustomerDTO convertToDTO(Customer model) {
-        CustomerDTO dto = new CustomerDTO();
+    private UserDTO convertToDTO(User model) {
+        UserDTO dto = new UserDTO();
 
         dto.setId(model.getId());
         dto.setFirstName(model.getFirstName());

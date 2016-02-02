@@ -1,6 +1,6 @@
 package com.blinch.server.web;
 
-import com.blinch.server.domain.customer.Customer;
+import com.blinch.server.domain.customer.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,12 +18,12 @@ import javax.validation.Valid;
 public class LoginController {
 
     @RequestMapping(value="/api/v1/login", method= RequestMethod.GET)
-    public String login(Customer customer) {
+    public String login(User customer) {
         return "login";
     }
 
     @RequestMapping(value = "/api/v1/login", method = RequestMethod.POST)
-    public String loginCustomer(@Valid Customer customer, BindingResult bindingResult, Model model) {
+    public String loginCustomer(@Valid User customer, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "login";
         }

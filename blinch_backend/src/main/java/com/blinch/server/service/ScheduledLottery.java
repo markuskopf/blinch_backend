@@ -1,6 +1,6 @@
 package com.blinch.server.service;
 
-import com.blinch.server.domain.customer.CustomerRepository;
+import com.blinch.server.domain.customer.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -17,10 +17,10 @@ public class ScheduledLottery {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    private final CustomerRepository customerRepository;
+    private final UserRepository customerRepository;
 
     @Autowired
-    public ScheduledLottery(CustomerRepository customerRepository) {
+    public ScheduledLottery(UserRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 

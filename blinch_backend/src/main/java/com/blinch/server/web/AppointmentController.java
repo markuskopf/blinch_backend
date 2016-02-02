@@ -7,6 +7,8 @@ package com.blinch.server.web;
 import com.blinch.server.domain.appointment.AppointmentDTO;
 
 import com.blinch.server.service.appointment.AppointmentService;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +20,8 @@ import javax.validation.Valid;
 public class AppointmentController {
 
     final AppointmentService service;
+
+    private static final Logger LOGGER = LogManager.getLogger(AppointmentController.class);
 
     @Autowired
     public AppointmentController(AppointmentService service) {

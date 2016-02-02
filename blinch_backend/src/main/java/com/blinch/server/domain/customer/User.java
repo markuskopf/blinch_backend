@@ -11,7 +11,7 @@ import java.util.HashSet;
 /**
  * Created by markuskopf on 18/01/16.
  */
-public class Customer {
+public class User {
 
     @Id
     private String id;
@@ -44,9 +44,9 @@ public class Customer {
     @Size(min = 5, max = 20)
     private String password;
 
-    public Customer() {}
+    public User() {}
 
-    public Customer(String firstName, String lastName, String emailAddress, String phone, String company) {
+    public User(String firstName, String lastName, String emailAddress, String phone, String company) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
@@ -62,7 +62,7 @@ public class Customer {
     @Override
     public String toString() {
         return String.format(
-                "Customer[id=%s, firstName='%s', lastName='%s']",
+                "User[id=%s, firstName='%s', lastName='%s']",
                 id, firstName, lastName);
     }
 

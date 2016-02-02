@@ -1,8 +1,9 @@
 package com.blinch.server.domain.appointment;
 
-import com.blinch.server.domain.customer.Customer;
+import com.blinch.server.domain.customer.User;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
 import java.util.HashSet;
@@ -10,13 +11,15 @@ import java.util.HashSet;
 /**
  * Created by markuskopf on 28/01/16.
  */
+
+@Document(collection = "Appointment")
 public class Appointment {
 
     @Id
     private String id;
 
     @DBRef
-    private HashSet<Customer> customers;
+    private HashSet<User> customers;
 
     private Date appointmentDate;
 
@@ -32,7 +35,7 @@ public class Appointment {
 
     }
 
-    public Appointment(HashSet<Customer> customers, Date appointmentDate, String locationName, long longitute, long latitude, String city) {
+    public Appointment(HashSet<User> customers, Date appointmentDate, String locationName, long longitute, long latitude, String city) {
         this.customers = customers;
         this.appointmentDate = appointmentDate;
         this.locationName = locationName;
@@ -49,11 +52,11 @@ public class Appointment {
         this.id = id;
     }
 
-    public HashSet<Customer> getCustomers() {
+    public HashSet<User> getCustomers() {
         return customers;
     }
 
-    public void setCustomers(HashSet<Customer> customers) {
+    public void setCustomers(HashSet<User> customers) {
         this.customers = customers;
     }
 

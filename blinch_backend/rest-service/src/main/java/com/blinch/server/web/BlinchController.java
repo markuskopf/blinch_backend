@@ -1,6 +1,6 @@
 package com.blinch.server.web;
 
-import com.blinch.server.domain.*;
+import com.blinch.server.domain.old.*;
 import com.blinch.server.exception.NotYetImplementedException;
 import com.blinch.server.exception.UserNotFoundException;
 import org.springframework.web.bind.annotation.RequestBody;

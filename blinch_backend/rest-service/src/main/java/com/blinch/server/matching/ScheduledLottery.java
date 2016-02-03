@@ -18,7 +18,7 @@ public class ScheduledLottery {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
 //    private final UserRepository customerRepository;
-
+//
 //    @Autowired
 //    public com.blinch.server.matching.ScheduledLottery(UserRepository customerRepository) {
 //        this.customerRepository = customerRepository;

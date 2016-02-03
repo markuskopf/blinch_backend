@@ -12,7 +12,6 @@
     <description>blinch product</description>
 
     <modules>
-        <module>homepage-ui-service</module>
         <module>rest-service</module>
         <module>matching-service</module>
     </modules>

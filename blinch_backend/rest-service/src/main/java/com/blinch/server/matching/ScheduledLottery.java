@@ -1,3 +1,5 @@
+package com.blinch.server.matching;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -18,11 +20,12 @@ public class ScheduledLottery {
 //    private final UserRepository customerRepository;
 
 //    @Autowired
-//    public ScheduledLottery(UserRepository customerRepository) {
+//    public com.blinch.server.matching.ScheduledLottery(UserRepository customerRepository) {
 //        this.customerRepository = customerRepository;
 //    }
 
     @Scheduled(fixedRate = 5000)
+    //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
 

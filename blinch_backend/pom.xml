@@ -6,14 +6,17 @@
     <groupId>com.blinch</groupId>
     <artifactId>blinch</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <modules>
-        <module>homepage-ui-service</module>
-        <module>rest-service</module>
-    </modules>
     <packaging>pom</packaging>
 
     <name>blinch</name>
     <description>blinch product</description>
+
+    <modules>
+        <module>homepage-ui-service</module>
+        <module>rest-service</module>
+        <module>matching-service</module>
+    </modules>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -27,17 +30,19 @@
         <java.version>1.8</java.version>
     </properties>
 
-
+    <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
+                <version>1.3.2.RELEASE</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
-                <scope>test</scope>
+                <version>1.3.2.RELEASE</version>
             </dependency>
 
             <dependency>
@@ -51,6 +56,8 @@
                 <artifactId>spring-boot-starter-data-mongodb</artifactId>
                 <version>1.1.9.RELEASE</version>
             </dependency>
+
         </dependencies>
+    </dependencyManagement>
 
 </project>

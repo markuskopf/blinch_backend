@@ -11,9 +11,6 @@
 
     <artifactId>homepage-ui-service</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>../matching-service</module>
-    </modules>
 
 
 </project>

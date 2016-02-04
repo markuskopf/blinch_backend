@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-@ComponentScan(basePackages = {"com.blinch.server", "com.matcher"})
+@ComponentScan(basePackages = {"com.blinch.server", "com.blinch.matcher"})
 public class ServerApplication {
 
 

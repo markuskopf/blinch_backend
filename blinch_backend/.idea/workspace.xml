@@ -2,47 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92817845-0df7-4840-a83c-9321718dc1da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/exception/EventNotFoundException.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/BlinchAppointment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/CheckinRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/CheckinResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/DefaultResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/HistoryResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/LoginRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/LoginResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/LogoutRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/LogoutResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/RegisterRequest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/RegisterResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/StatusResponse.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matching-service/target/classes/com/matcher/LotteryScheduler.class" afterPath="$PROJECT_DIR$/matching-service/target/classes/com/matcher/LotteryScheduler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matching-service/target/matching-service-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/matching-service/target/matching-service-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/checkin/CheckInDTO.class" afterPath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/checkin/CheckInDTO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/matching/ScheduledLottery.class" afterPath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/matching/ScheduledLottery.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/checkin/CheckInServiceImpl.class" afterPath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/checkin/CheckInServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/BlinchController.class" afterPath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/BlinchController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/CheckInController.class" afterPath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/CheckInController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matching-service/src/main/java/com/matcher/LotteryScheduler.java" afterPath="$PROJECT_DIR$/matching-service/src/main/java/com/matcher/LotteryScheduler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/matching-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/matching-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckIn.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckInDTO.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckInDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/User.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserRepository.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserRepository.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/matching-service/src/main/java/com/matcher/LotteryScheduler.java" afterPath="$PROJECT_DIR$/matching-service/src/main/java/com/blinch/matcher/LotteryScheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventRepository.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/matching/ScheduledLottery.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/matching/ScheduledLottery.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserService.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserServiceImpl.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInServiceImpl.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventService.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/web/CheckInController.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/web/CheckInController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/classes/application.properties" afterPath="$PROJECT_DIR$/rest-service/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/rest-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/rest-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/rest-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="blinch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,21 +33,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CheckInServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CheckInServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82568806">
-              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserRepository.java">
+      <file leaf-file-name="EventDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="37" />
+              <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+              <folding>
+                <element signature="e#1406#1407#0" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="e#1487#1488#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Event.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+              <folding>
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#889#890#0" expanded="true" />
+                <element signature="e#932#933#0" expanded="true" />
+                <element signature="e#970#971#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38837922">
+              <caret line="35" column="150" selection-start-line="35" selection-start-column="150" selection-end-line="35" selection-end-column="150" />
               <folding />
             </state>
           </provider>
@@ -134,16 +137,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="31" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CheckInController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/web/CheckInController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -153,26 +146,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#800#801#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckInDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckInDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckInService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -204,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/exception/GroupNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/web/EventController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/event/EventRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/blinch/server/domain/event/EventDTO.java" />
@@ -237,7 +209,6 @@
         <option value="$PROJECT_DIR$/matching-service/src/main/java/com/matcher/MatchingApplication.java" />
         <option value="$PROJECT_DIR$/matching-service/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/old/BlinchAppointment.java" />
         <option value="$PROJECT_DIR$/matching-service/src/main/java/com/matcher/LotteryScheduler.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/matching/ScheduledLottery.java" />
@@ -247,14 +218,16 @@
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserService.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserRepository.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/exception/EventNotFoundException.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventRepository.java" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventService.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInServiceImpl.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckInDTO.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/User.java" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1872,12 +1845,12 @@
       <workItem from="1453418661942" duration="3771000" />
       <workItem from="1453422707090" duration="4004000" />
       <workItem from="1453742063478" duration="44239000" />
-      <workItem from="1454444246272" duration="28387000" />
+      <workItem from="1454444246272" duration="29075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80401000" />
+    <option name="totallyTimeSpent" value="81089000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2236,15 +2209,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43644717">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matching-service/src/main/java/com/matcher/LotteryScheduler.java">
+    <entry file="file://$PROJECT_DIR$/matching-service/src/main/java/com/blinch/matcher/LotteryScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
@@ -2355,14 +2320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/group/BLIGroup.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2384,8 +2341,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2395,9 +2352,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#358#359#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2406,14 +2363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -2428,20 +2377,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.814815">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="33" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2536,8 +2477,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82568806">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="66" selection-start-line="54" selection-start-column="66" selection-end-line="54" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="29" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1487#1488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/ServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="64" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#889#890#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/event/EventServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38837922">
+          <caret line="35" column="150" selection-start-line="35" selection-start-column="150" selection-end-line="35" selection-end-column="150" />
           <folding />
         </state>
       </provider>

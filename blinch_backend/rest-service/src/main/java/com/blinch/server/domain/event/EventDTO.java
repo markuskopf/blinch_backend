@@ -21,6 +21,8 @@ public class EventDTO {
 
     private long latitude;
 
+    private int weekday;
+
     @NotEmpty
     @Size(min = 1)
     private String location;
@@ -71,5 +73,13 @@ public class EventDTO {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public int getWeekday() {
+        return weekday;
+    }
+
+    public void setWeekday(int weekday) {
+        this.weekday = weekday;
     }
 }

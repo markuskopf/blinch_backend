@@ -19,6 +19,8 @@ public class Event {
 
     private Date date;
 
+    private int weekday;
+
     private long longitute;
 
     private long latitude;
@@ -29,12 +31,21 @@ public class Event {
 
     }
 
-    public Event(BLIGroup group, Date date, long longitute, long latitude, String location) {
+    public Event(BLIGroup group, Date date, long longitute, long latitude, String location, int weekday) {
         this.group = group;
         this.date = date;
         this.longitute = longitute;
         this.latitude = latitude;
         this.location = location;
+        this.weekday = weekday;
+    }
+
+    public int getWeekday() {
+        return weekday;
+    }
+
+    public void setWeekday(int weekday) {
+        this.weekday = weekday;
     }
 
     public String getId() {

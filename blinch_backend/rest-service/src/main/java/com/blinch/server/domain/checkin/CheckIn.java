@@ -2,6 +2,7 @@ package com.blinch.server.domain.checkin;
 
 import com.blinch.server.domain.customer.User;
 import com.blinch.server.domain.event.Event;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -22,8 +23,10 @@ public class CheckIn {
     private User user;
 
     @DBRef
+    @NotEmpty
     private Event event;
 
+    @NotEmpty
     private Date checkinDate;
 
 

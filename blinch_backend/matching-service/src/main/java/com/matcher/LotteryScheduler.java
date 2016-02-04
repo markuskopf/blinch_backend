@@ -15,7 +15,7 @@ public class LotteryScheduler {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 50000)
     //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.

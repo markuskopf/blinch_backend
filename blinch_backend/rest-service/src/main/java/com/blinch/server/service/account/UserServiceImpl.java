@@ -82,6 +82,16 @@ final class UserServiceImpl implements UserService {
         return convertToDTO(findCustomerById(id));
     }
 
+    @Override
+    public UserDTO findByEmailAddress(String emailAddress) {
+        return convertToDTO(findUserByEmailAddress(emailAddress));
+    }
+
+    private User findUserByEmailAddress(String emailAddress) {
+        Optional<User> result = repository.findByEmailAddress(emailAddress);
+        return result.orElseThrow(() -> new UserNotFoundException(emailAddress));
+    }
+
     private User findCustomerByLastName(String lastName) {
         Optional<User> result = repository.findByLastName(lastName);
         return result.orElseThrow(() -> new UserNotFoundException(lastName));
@@ -103,6 +113,7 @@ final class UserServiceImpl implements UserService {
         dto.setId(model.getId());
         dto.setFirstName(model.getFirstName());
         dto.setLastName(model.getLastName());
+        dto.setEmailAddress(model.getEmailAddress());
 
         return dto;
     }

@@ -24,12 +24,12 @@ public class ScheduledLottery {
 //        this.customerRepository = customerRepository;
 //    }
 
-    @Scheduled(fixedRate = 5000)
+//    @Scheduled(fixedRate = 5000)
     //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
 
-        System.out.println("Blind lunch date: " + dateFormat.format(new Date()));
+//        System.out.println("Blind lunch date: " + dateFormat.format(new Date()));
     }
 
 }

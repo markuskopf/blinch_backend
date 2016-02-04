@@ -2,6 +2,7 @@ package com.blinch.server.domain.checkin;
 
 import com.blinch.server.domain.customer.User;
 import com.blinch.server.domain.event.Event;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import java.util.Date;
 
@@ -14,15 +15,25 @@ public class CheckInDTO {
 
     private User user;
 
+    private String userId;
+
     private Date checkinDate;
 
     private String id;
 
+    @NotEmpty
+    private String emailAddress;
 
-    public CheckInDTO(Event event, User user, Date checkinDate) {
+    public CheckInDTO() {
+
+    }
+
+    public CheckInDTO(Event event, User user, Date checkinDate, String userId, String emailAddress) {
         this.event = event;
         this.user = user;
         this.checkinDate = checkinDate;
+        this.userId = userId;
+        this.emailAddress = emailAddress;
     }
 
     public Event getEvent() {
@@ -55,5 +66,21 @@ public class CheckInDTO {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 }

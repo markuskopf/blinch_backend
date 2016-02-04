@@ -17,5 +17,7 @@ public interface UserService {
 
     UserDTO findById(String id);
 
+    UserDTO findByEmailAddress(String emailAddress);
+
 
 }

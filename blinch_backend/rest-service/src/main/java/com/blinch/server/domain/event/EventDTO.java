@@ -11,8 +11,10 @@ public class EventDTO {
 
     private String id;
 
+    @NotEmpty
     private String groupName;
 
+    @NotEmpty
     private Date date;
 
     private long longitute;

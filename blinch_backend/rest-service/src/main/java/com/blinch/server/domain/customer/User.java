@@ -49,6 +49,9 @@ public class User {
     public User(String firstName, String lastName, String emailAddress, String phone, String company) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.emailAddress = emailAddress;
+        this.phone = phone;
+        this.company = company;
     }
 
     public void setBliGroup(BLIGroup blichGroup) throws IllegalArgumentException {
@@ -128,5 +131,33 @@ public class User {
 
     public void setAppointments(HashSet<Appointment> appointments) {
         this.appointments = appointments;
+    }
+
+    public BLIGroup getBliGroup() {
+        return bliGroup;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
     }
 }

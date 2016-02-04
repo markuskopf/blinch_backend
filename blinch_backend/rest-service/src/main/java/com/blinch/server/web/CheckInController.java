@@ -24,7 +24,7 @@ public class CheckInController {
 
     @RequestMapping(value = "/api/v1/checkins", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    CheckInDTO create(@RequestBody @Valid CheckInDTO checkInEntry) {
+    CheckInDTO create(@RequestBody CheckInDTO checkInEntry) {
         return service.create(checkInEntry);
     }
 

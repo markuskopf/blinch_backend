@@ -5,10 +5,12 @@ import com.blinch.server.domain.event.EventDTO;
 import com.blinch.server.domain.event.EventRepository;
 import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupRepository;
+import com.blinch.server.exception.EventNotFoundException;
 import com.blinch.server.exception.GroupNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
 import java.util.Optional;
 
 /**
@@ -42,6 +44,17 @@ public class EventServiceImpl implements  EventService {
         // Not implemented yet
     }
 
+    @Override
+    public EventDTO findEventByGroupName(BLIGroup group) {
+        Event persistedEvent = findEventWithGroup(group);
+        return convertToDTO(persistedEvent);
+    }
+
+
+    private Event findEventWithGroup(BLIGroup group) {
+        Optional<Event> result = eventRepository.findEventByGroup(group);
+        return result.orElseThrow( () -> new EventNotFoundException(group.getGroupName()));
+    }
 
     private BLIGroup findGroupByGroupName(String groupName) {
         Optional<BLIGroup> result = bliGroupRepository.findByGroupName(groupName);

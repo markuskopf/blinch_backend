@@ -3,6 +3,7 @@ package com.blinch.server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
@@ -11,7 +12,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-@ComponentScan(basePackages = {"com.blinch.server", "com.blinch.matcher"})
+@EnableMongoAuditing
+@ComponentScan(basePackages = {"com.blinch.server", "com.blinch.matcher", "com.blinch.common.domain"})
 public class ServerApplication {
 
 

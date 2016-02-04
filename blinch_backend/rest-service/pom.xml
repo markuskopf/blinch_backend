@@ -34,7 +34,7 @@
 
         <dependency>
             <groupId>com.blinch</groupId>
-            <artifactId>matching-service</artifactId>
+            <artifactId>common-data</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 

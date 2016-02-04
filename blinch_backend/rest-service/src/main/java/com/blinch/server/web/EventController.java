@@ -25,7 +25,7 @@ public class EventController {
 
     @RequestMapping(method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    EventDTO create(@RequestBody @Valid EventDTO eventEntry) {
+    EventDTO create(@RequestBody EventDTO eventEntry) {
         return service.create(eventEntry);
     }
 

@@ -1,5 +1,6 @@
 package com.blinch.server.domain.checkin;
 
+import com.blinch.common.domain.AbstractAuditableEntity;
 import com.blinch.server.domain.customer.User;
 import com.blinch.server.domain.event.Event;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -14,10 +15,7 @@ import java.util.Date;
  */
 
 @Document(language = "CheckIn")
-public class CheckIn {
-
-    @Id
-    private String id;
+public class CheckIn extends AbstractAuditableEntity {
 
     @DBRef
     private User user;
@@ -34,14 +32,6 @@ public class CheckIn {
         this.user = user;
         this.event = event;
         this.checkinDate = checkinDate;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public User getUser() {

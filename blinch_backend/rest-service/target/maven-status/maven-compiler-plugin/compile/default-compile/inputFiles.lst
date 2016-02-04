@@ -2,6 +2,7 @@
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/exception/UserNotFoundException.java
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/service/appointment/AppointmentServiceImpl.java
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/service/appointment/AppointmentService.java
+/Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/exception/EventNotFoundException.java
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/domain/event/EventRepository.java
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/service/checkin/CheckInService.java
 /Users/markuskopf/Projects/blinch/backend_blinch/blinch_backend/rest-service/src/main/java/com/blinch/server/domain/appointment/Appointment.java

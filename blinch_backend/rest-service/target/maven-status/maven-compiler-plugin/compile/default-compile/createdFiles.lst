@@ -15,6 +15,7 @@ com/blinch/server/web/UserController.class
 com/blinch/server/domain/event/Event.class
 com/blinch/server/service/checkin/CheckInServiceImpl.class
 com/blinch/server/domain/old/HistoryResponse.class
+com/blinch/server/exception/EventNotFoundException.class
 com/blinch/server/domain/old/LoginResponse.class
 com/blinch/server/domain/old/LoginRequest.class
 com/blinch/server/service/event/EventService.class

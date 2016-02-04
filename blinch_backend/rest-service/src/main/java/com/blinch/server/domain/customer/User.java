@@ -1,5 +1,6 @@
 package com.blinch.server.domain.customer;
 
+import com.blinch.common.domain.AbstractAuditableEntity;
 import com.blinch.server.domain.appointment.Appointment;
 import com.blinch.server.domain.group.BLIGroup;
 import org.springframework.data.annotation.Id;
@@ -11,10 +12,7 @@ import java.util.HashSet;
 /**
  * Created by markuskopf on 18/01/16.
  */
-public class User {
-
-    @Id
-    private String id;
+public class User extends AbstractAuditableEntity {
 
     @Size(min = 2, max = 1000)
     private String firstName;
@@ -65,16 +63,8 @@ public class User {
     @Override
     public String toString() {
         return String.format(
-                "User[id=%s, firstName='%s', lastName='%s']",
-                id, firstName, lastName);
-    }
-
-    public String getId() {
-        return this.id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
+                "User[firstName='%s', lastName='%s']",
+                firstName, lastName);
     }
 
     public String getFirstName() {

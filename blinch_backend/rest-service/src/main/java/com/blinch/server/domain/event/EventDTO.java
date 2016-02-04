@@ -14,14 +14,13 @@ public class EventDTO {
     @NotEmpty
     private String groupName;
 
-    @NotEmpty
-    private Date date;
+    private Date eventDate;
 
     private long longitute;
 
     private long latitude;
 
-    private int weekday;
+    private long weekday;
 
     @NotEmpty
     @Size(min = 1)
@@ -43,12 +42,12 @@ public class EventDTO {
         this.groupName = groupName;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getEventDate() {
+        return eventDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setEventDate(Date eventDate) {
+        this.eventDate = eventDate;
     }
 
     public long getLongitute() {
@@ -75,11 +74,11 @@ public class EventDTO {
         this.location = location;
     }
 
-    public int getWeekday() {
+    public long getWeekday() {
         return weekday;
     }
 
-    public void setWeekday(int weekday) {
+    public void setWeekday(long weekday) {
         this.weekday = weekday;
     }
 }

@@ -1,5 +1,6 @@
 package com.blinch.server.domain.appointment;
 
+import com.blinch.common.domain.AbstractAuditableEntity;
 import com.blinch.server.domain.customer.User;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
@@ -13,10 +14,7 @@ import java.util.HashSet;
  */
 
 @Document(collection = "Appointment")
-public class Appointment {
-
-    @Id
-    private String id;
+public class Appointment extends AbstractAuditableEntity {
 
     @DBRef
     private HashSet<User> customers;
@@ -42,14 +40,6 @@ public class Appointment {
         this.longitute = longitute;
         this.latitude = latitude;
         this.city = city;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public HashSet<User> getCustomers() {

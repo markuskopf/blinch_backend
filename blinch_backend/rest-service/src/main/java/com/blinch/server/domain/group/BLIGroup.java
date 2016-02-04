@@ -1,5 +1,6 @@
 package com.blinch.server.domain.group;
 
+import com.blinch.common.domain.AbstractAuditableEntity;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 
@@ -8,10 +9,7 @@ import javax.validation.constraints.Size;
 /**
  * Created by markuskopf on 26/01/16.
  */
-public class BLIGroup {
-
-    @Id
-    private String id;
+public class BLIGroup  extends AbstractAuditableEntity {
 
     @Size(min = 2, max = 1000)
 
@@ -91,11 +89,4 @@ public class BLIGroup {
         return groupName;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getId() {
-        return id;
-    }
 }

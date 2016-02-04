@@ -1,6 +1,8 @@
 package com.blinch.server.domain.event;
 
+import com.blinch.common.domain.AbstractAuditableEntity;
 import com.blinch.server.domain.group.BLIGroup;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 
@@ -9,17 +11,15 @@ import java.util.Date;
 /**
  * Created by markuskopf on 29/01/16.
  */
-public class Event {
-
-    @Id
-    private String id;
+public class Event extends AbstractAuditableEntity {
 
     @DBRef
     private BLIGroup group;
 
-    private Date date;
+    @NotEmpty
+    private Date eventDate;
 
-    private int weekday;
+    private long weekday;
 
     private long longitute;
 
@@ -31,29 +31,21 @@ public class Event {
 
     }
 
-    public Event(BLIGroup group, Date date, long longitute, long latitude, String location, int weekday) {
+    public Event(BLIGroup group, Date date, long longitute, long latitude, String location, long weekday) {
         this.group = group;
-        this.date = date;
+        this.eventDate = date;
         this.longitute = longitute;
         this.latitude = latitude;
         this.location = location;
         this.weekday = weekday;
     }
 
-    public int getWeekday() {
+    public long getWeekday() {
         return weekday;
     }
 
-    public void setWeekday(int weekday) {
+    public void setWeekday(long weekday) {
         this.weekday = weekday;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public BLIGroup getGroup() {
@@ -64,12 +56,12 @@ public class Event {
         this.group = group;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getEventDate() {
+        return eventDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setEventDate(Date eventDate) {
+        this.eventDate = eventDate;
     }
 
     public long getLongitute() {

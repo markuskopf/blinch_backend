@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -50,6 +51,10 @@ public class EventServiceImpl implements  EventService {
         return convertToDTO(persistedEvent);
     }
 
+    @Override
+    public List<Event> findAllEvents() {
+        return this.eventRepository.findAll();
+    }
 
     private Event findEventWithGroup(BLIGroup group) {
         Optional<Event> result = eventRepository.findEventByGroup(group);

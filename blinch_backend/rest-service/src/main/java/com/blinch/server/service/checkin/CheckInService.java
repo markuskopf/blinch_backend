@@ -9,4 +9,6 @@ public interface CheckInService {
 
     CheckInDTO create(CheckInDTO checkIn);
 
+    // TODO: give users who checked-in for a company
+
 }

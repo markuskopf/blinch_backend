@@ -1,9 +1,11 @@
 package com.blinch.server.service.event;
 
+import com.blinch.server.domain.event.Event;
 import com.blinch.server.domain.event.EventDTO;
 import com.blinch.server.domain.group.BLIGroup;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -17,5 +19,7 @@ public interface EventService {
     void delete(String id);
 
     EventDTO findEventByGroupName(BLIGroup group);
+
+    List<Event> findAllEvents();
 
 }

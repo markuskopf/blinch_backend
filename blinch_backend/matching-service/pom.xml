@@ -24,12 +24,6 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.blinch</groupId>
-            <artifactId>rest-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
 

@@ -1,10 +1,16 @@
-package com.blinch.matcher;
+package com.blinch.server.task;
 
+import com.blinch.server.domain.event.Event;
+import com.blinch.server.domain.event.EventRepository;
+import com.blinch.server.service.checkin.CheckInService;
+import com.blinch.server.service.event.EventService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by markuskopf on 03/02/16.
@@ -15,12 +21,22 @@ public class LotteryScheduler {
 
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
 
+    final EventService eventService;
+
+    final CheckInService checkInService;
+
+    @Autowired
+    public LotteryScheduler(EventService eventService, CheckInService checkInService) {
+        this.eventService = eventService;
+        this.checkInService = checkInService;
+    }
+
     @Scheduled(fixedRate = 50000)
     //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
 
-        System.out.println("LotteryScheduler component: " + dateFormat.format(new Date()));
+
 
         // TODO:
         // 1.) Check every day at 11 which groups has an event scheduled.
@@ -30,6 +46,11 @@ public class LotteryScheduler {
         // 4.) Push them the information
         // 5.) Save them in an appointment --> this is the history
         // 6.) Delete checked-in users so start from scratch next time
+
+
+        List<Event> events = this.eventService.findAllEvents();
+
+        System.out.println("LotteryScheduler component: " + dateFormat.format(new Date()));
 
     }
 

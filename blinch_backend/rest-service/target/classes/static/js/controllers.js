@@ -7,12 +7,13 @@ var blinchAppControllers = angular.module('blinchAppControllers', []);
 
 blinchAppControllers.controller('blinchAppCtrl', ['$scope', '$http',
    function($scope, $http) {
-     $http.get('/resource/').success(function(data) {
-                $scope.greeting = data;
-            })
+        $http.get('/resource/').success(function(data) {
+                  $scope.greeting = data;
+            });
+
    }]);
 
-blinchAppControllers.controller('blinchAppCtrl', ['$scope', '$routeParams',
+blinchAppControllers.controller('blinchAppDashboardCtrl', ['$scope', '$routeParams',
    function($scope, $routeParams) {
-     $scope.phoneId = $routeParams.phoneId;
+     $scope.user = $routeParams.userId;
    }]);

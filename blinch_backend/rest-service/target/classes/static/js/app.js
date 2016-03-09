@@ -16,6 +16,7 @@ blinchApp.config(['$routeProvider',
       }).
       when('/dashboard', {
         templateUrl: 'partials/landing-dashboard.html',
+        controller: 'blinchAppDashboardCtrl'
       }).
       otherwise({
         redirectTo: '/index'

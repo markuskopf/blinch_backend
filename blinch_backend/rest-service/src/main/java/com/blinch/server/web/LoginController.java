@@ -6,15 +6,17 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 
 /**
  * Created by markuskopf on 20/01/16.
  */
 
-@Controller
+@RestController
 public class LoginController {
 
     @RequestMapping(value="/api/v1/login", method= RequestMethod.GET)
@@ -32,5 +34,11 @@ public class LoginController {
         model.addAttribute("password", customer.getPassword());
 
         return "result";
+    }
+
+
+    @RequestMapping("/user")
+    public Principal user(Principal user) {
+        return user;
     }
 }

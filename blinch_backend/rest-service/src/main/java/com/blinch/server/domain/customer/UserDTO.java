@@ -33,6 +33,17 @@ public class UserDTO {
 
     private String country;
 
+    private String passwordHash;
+
+
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
+    }
 
     public String getEmailAddress() {
         return emailAddress;

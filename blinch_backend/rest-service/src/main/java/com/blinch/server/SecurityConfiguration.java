@@ -33,11 +33,13 @@ import java.io.IOException;
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+    @Autowired
+    private UserDetailsService userDetailsService;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and().authorizeRequests()
-                .antMatchers("/index.html", "/home.html", "/login.html", "/").permitAll().anyRequest()
+                .antMatchers("/index.html", "/home.html", "/login.html", "/", "/img/essen.jpg").permitAll().anyRequest()
                 .authenticated().and()
                 .logout().and()
                 .csrf().csrfTokenRepository(csrfTokenRepository()).and()
@@ -76,6 +78,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return repository;
     }
 
+
+    @Override
+    public void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth
+                .userDetailsService(userDetailsService)
+                .passwordEncoder(new BCryptPasswordEncoder());
+    }
 
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {

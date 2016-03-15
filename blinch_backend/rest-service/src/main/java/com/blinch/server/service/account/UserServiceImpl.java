@@ -7,6 +7,7 @@ import com.blinch.server.domain.group.BLIGroup;
 import com.blinch.server.domain.group.BLIGroupRepository;
 import com.blinch.server.exception.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -47,6 +48,8 @@ final class UserServiceImpl implements UserService {
         }
 
         User persisted = new User(customer.getFirstName(), customer.getLastName(), customer.getEmailAddress(), customer.getPhone(), customer.getCompany());
+        persisted.setPasswordHash(new BCryptPasswordEncoder().encode("12345678"));
+
         persisted.setBliGroup(group);
 
 

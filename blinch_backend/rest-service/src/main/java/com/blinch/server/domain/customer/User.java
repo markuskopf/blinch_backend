@@ -5,6 +5,7 @@ import com.blinch.server.domain.appointment.Appointment;
 import com.blinch.server.domain.group.BLIGroup;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.repository.query.StringBasedMongoQuery;
 
 import javax.validation.constraints.Size;
 import java.util.HashSet;
@@ -32,6 +33,8 @@ public class User extends AbstractAuditableEntity {
     private String city;
 
     private String country;
+
+    private String passwordHash;
 
     @DBRef
     private BLIGroup bliGroup;
@@ -149,5 +152,14 @@ public class User extends AbstractAuditableEntity {
 
     public void setStreet(String street) {
         this.street = street;
+    }
+
+
+    public String getPasswordHash() {
+        return passwordHash;
+    }
+
+    public void setPasswordHash(String passwordHash) {
+        this.passwordHash = passwordHash;
     }
 }

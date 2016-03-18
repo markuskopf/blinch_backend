@@ -10,6 +10,9 @@ angular.module('app', [ 'ngRoute' ]).config(function($routeProvider, $httpProvid
 		templateUrl : 'login.html',
 		controller : 'navigation',
 		controllerAs: 'controller'
+	}).when('/register', {
+	    templateUrl : 'register.html',
+	    controller : 'register',
 	}).otherwise('/');
 
 	$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -77,8 +80,14 @@ angular.module('app', [ 'ngRoute' ]).config(function($routeProvider, $httpProvid
 				});
 			}
 
-		}).controller('home', function($scope, $http) {
+}).controller('home', function($scope, $http) {
 	$http.get('/resource/').success(function(data) {
 		$scope.greeting = data;
 	})
+
+}).controller('register', function($scope, $http) {
+
+    // not implemented yet.
+    $scope.tmp = 'Test';
+
 });

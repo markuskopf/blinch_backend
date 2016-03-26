@@ -1,6 +1,11 @@
 
 
-angular.module('app', [ 'ngRoute' ]).config(function($routeProvider, $httpProvider) {
+var app = angular.module('app', [
+    'ngRoute' ,
+    'appControllers'
+]);
+
+app.config(function($routeProvider, $httpProvider) {
 
 	$routeProvider.when('/', {
 		templateUrl : 'home.html',
@@ -13,81 +18,9 @@ angular.module('app', [ 'ngRoute' ]).config(function($routeProvider, $httpProvid
 	}).when('/register', {
 	    templateUrl : 'register.html',
 	    controller : 'register',
+	    controllerAs: 'register'
 	}).otherwise('/');
 
 	$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-
-}).controller('navigation',
-
-		function($rootScope, $scope, $http, $location, $route) {
-
-			var self = this;
-
-			self.tab = function(route) {
-				return $route.current && route === $route.current.controller;
-			};
-
-			var authenticate = function(credentials, callback) {
-
-				var headers = credentials ? {
-					authorization : "Basic "
-							+ btoa(credentials.username + ":"
-									+ credentials.password)
-				} : {};
-
-				$http.get('user', {
-					headers : headers
-				}).success(function(data) {
-					if (data.name) {
-						$rootScope.authenticated = true;
-					} else {
-						$rootScope.authenticated = false;
-					}
-
-					callback && callback($rootScope.authenticated);
-				}).error(function() {
-					$rootScope.authenticated = false;
-					callback && callback(false);
-				});
-
-			}
-
-			authenticate();
-
-			self.credentials = {};
-			self.login = function() {
-				authenticate(self.credentials, function(authenticated) {
-					if (authenticated) {
-						console.log("Login succeeded")
-						$location.path("/");
-						self.error = false;
-						$rootScope.authenticated = true;
-					} else {
-						console.log("Login failed")
-						$location.path("/login");
-						self.error = true;
-						$rootScope.authenticated = false;
-					}
-				})
-			};
-
-			$scope.logout = function() {
-				$http.post('logout', {}).success(function() {
-					$rootScope.authenticated = false;
-					$location.path("/");
-				}).error(function(data) {
-				    $rootScope.authenticated = false;
-				});
-			}
-
-}).controller('home', function($scope, $http) {
-	$http.get('/resource/').success(function(data) {
-		$scope.greeting = data;
-	})
-
-}).controller('register', function($scope, $http) {
-
-    // not implemented yet.
-    $scope.tmp = 'Test';
 
 });

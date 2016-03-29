@@ -2,7 +2,9 @@
 
 var app = angular.module('app', [
     'ngRoute' ,
-    'appControllers'
+    'appControllers' ,
+    'ngMessages' ,
+    'ngMaterial'
 ]);
 
 app.config(function($routeProvider, $httpProvider) {

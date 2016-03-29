@@ -6,6 +6,16 @@
     <p>The ID is {{greeting.id}}</p>
     <p>The content is {{greeting.content}}</p>
 </div>
+
+<div>
+    <div ng-show="authenticated" ng-controller="datePicker" style='padding: 40px;' ng-cloak>
+        <md-content>
+            <h4>Standard date-picker</h4>
+            <md-datepicker ng-model="myDate" md-placeholder="Enter date"></md-datepicker>
+        </md-content>
+    </div>
+</div>
+
 <div  ng-show="!authenticated">
     <p>Login to see your greeting</p>
 

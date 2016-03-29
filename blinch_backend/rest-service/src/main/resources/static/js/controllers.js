@@ -81,14 +81,10 @@ appControllers.controller('register',
 
             var self = this;
 
-
             var sendRegistrationData = function(registrationData) {
 
-
-
-
-            				$http.post('api/v1/users', registrationData).then(function(response) {
-                                                                                            console.log("Registration failed")
+            				$http.post('/api/v1/users', registrationData).then(function(response) {
+                                                                                            console.log("Registration successful")
                                                                                             $location.path("/");
                                                                                         }, function(response) {
                                                                                             console.log("Registration failed")
@@ -120,9 +116,8 @@ appControllers.controller('datePicker',
                   $scope.myDate.getMonth() + 2,
                   $scope.myDate.getDate());
               $scope.onlyWeekendsPredicate = function(date) {
-                var day = date.getDay();
-                return day === 0 || day === 6;
+                    var day = date.getDay();
+                    return day === 0 || day === 6;
                 }
         }
-
 );

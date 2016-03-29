@@ -39,7 +39,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and()
-                .authorizeRequests().antMatchers("/index.html", "/home.html", "/login.html", "/", "/img/essen.jpg",
+                .authorizeRequests().antMatchers("/index.html", "/home.html", "/login.html", "/", "/images/**",
                         "/register.html", "/api/v1/users").permitAll().anyRequest().authenticated().and()
                 .logout().and()
                 .csrf().csrfTokenRepository(csrfTokenRepository()).and()

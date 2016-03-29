@@ -3,7 +3,7 @@
 <head>
     <title>Hello blinch</title>
     <link href="css/angular-bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesDatePicker.css">
     <style type="text/css">
         [ng\:cloak], [ng-cloak], .ng-cloak {
         display: none !important;
@@ -12,6 +12,43 @@
 
 
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+
+
+    <title>Blinch – Better together</title>
+    <!-- Reset -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Some cool CSS3 animations -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- All our own styling-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=XLato:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=XOpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=XSignika:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery import -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/stickyheader.js" async></script>
+
+    <!-- Javasacript -->
+
+    <!-- PictureFill -->
+    <script>
+	// Picture element HTML5 shiv
+	document.createElement( "picture" );
+	</script>
+    <script src="js/picturefill.js" async></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Make all the HTML5 + CSS3 work in older browsers -->
+    <script src="js/modernizr.custom.89168.js"></script>
+    <!-- Javascript for the back-to-top button -->
+    <script src="js/main.js"></script>
+    <!-- As the name implies: this is used for the smooth scrolling between sections -->
+    <script src="js/smoothScrolling.js"></script>
+    <!-- Javascript sticky header -->
+    <script src="js/stickyHeader.js"></script>
 
 
 </head>
@@ -23,10 +60,16 @@
             <li class="active"><a href="#/">home</a></li>
             <li><a href="#/login">login</a></li>
             <li ng-show="authenticated"><a href="" ng-click="logout()">logout</a></li>
+
             <li ng-show="!authenticated"><a href="#/register">register</a></li>
         </ul>
     </div>
+
+
+
     <div ng-view class="container"></div>
+
+
 
     <script src="js/angular-bootstrap.js" type="text/javascript"></script>
     <script src="js/app.js"></script>

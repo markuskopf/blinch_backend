@@ -121,3 +121,10 @@ appControllers.controller('datePicker',
                 }
         }
 );
+
+appControllers.controller('signup',
+
+        function() {
+            console.log('do signup stuff');
+        }
+);

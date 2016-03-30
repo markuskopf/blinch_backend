@@ -21,7 +21,11 @@ app.config(function($routeProvider, $httpProvider) {
 	    templateUrl : 'register.html',
 	    controller : 'register',
 	    controllerAs: 'register'
-	}).otherwise('/');
+	}).when('/signup', {
+      	templateUrl : 'signup.html',
+      	controller : 'signup',
+      	controllerAs: 'signup'
+     }).otherwise('/');
 
 	$httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 

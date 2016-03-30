@@ -2,12 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92817845-0df7-4840-a83c-9321718dc1da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/images/Icon Inclusion.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/images/Icon Inclusion@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/images/Icon Inspiration.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/images/Icon Inspiration@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/images/heroImage.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/static/signup.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common-data/target/classes/com/blinch/common/domain/AbstractAuditableEntity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/common-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/matching-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/matching-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/matching-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/application-https.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/MvcConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/ServerApplication.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/appointment/Appointment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/appointment/AppointmentDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/appointment/AppointmentRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/checkin/CheckIn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/checkin/CheckInDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/checkin/CheckInRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/customer/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/event/Event.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/event/EventDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/event/EventRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/group/BLIGroup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/group/BLIGroupDTO.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/group/BLIGroupRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/BlinchAppointment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/CheckinRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/CheckinResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/DefaultResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/HistoryResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/LoginRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/LoginResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/LogoutRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/LogoutResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/RegisterRequest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/RegisterResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/domain/old/StatusResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/exception/EventNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/exception/GroupNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/exception/NotYetImplementedException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/exception/UserNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/matching/ScheduledLottery.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/account/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/appointment/AppointmentService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/appointment/AppointmentServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/checkin/CheckInService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/checkin/CheckInServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/event/EventService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/service/group/GroupService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/task/LotteryScheduler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/AppointmentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/BlinchController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/CheckInController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/EventController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/GroupController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/HomeController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/com/blinch/server/web/UserController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/static/css/angular-bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/login.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/register.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/templates/result.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/classes/tomcat.keystore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/generated-resources/static/css/angular-bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rest-service/target/wro/wro.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/SecurityConfiguration.java" afterPath="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/SecurityConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js" afterPath="$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js" />
     </list>
     <ignored path="blinch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +105,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SecurityConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/SecurityConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+            <state relative-caret-position="205">
+              <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="63" column="58" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -63,40 +139,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="657">
-              <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="111" column="44" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1845">
+            <state relative-caret-position="1590">
               <caret line="123" column="47" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -108,10 +154,57 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="icon_inclusion.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/images/icon_inclusion.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="91" column="91" selection-start-line="91" selection-start-column="91" selection-end-line="91" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -123,6 +216,7 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -145,7 +239,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserRepository.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/exception/EventNotFoundException.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/event/EventRepository.java" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckInDTO.java" />
@@ -188,14 +281,15 @@
         <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/customer/UserDTO.java" />
         <option value="$PROJECT_DIR$/rest-service/pom.xml" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js" />
         <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/css/styles.css" />
         <option value="$PROJECT_DIR$/rest-service/src/main/wro/wro.xml" />
         <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/register.html" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js" />
-        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/index.html" />
         <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/home.html" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/index.html" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js" />
         <option value="$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/SecurityConfiguration.java" />
+        <option value="$PROJECT_DIR$/rest-service/src/main/resources/static/signup.html" />
       </list>
     </option>
   </component>
@@ -502,6 +596,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blinch_backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rest-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -562,6 +690,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -939,19 +1068,19 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30612245" sideWeight="0.31501833" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22228146" sideWeight="0.49463806" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14978679" sideWeight="0.49463806" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21592921" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21592921" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14664143" sideWeight="0.71306473" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24253732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24946696" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24867256" sideWeight="0.6849817" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2079646" sideWeight="0.6849817" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1152,13 +1281,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.0.3.RELEASE/spring-security-core-4.0.3.RELEASE.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/domain/checkin/CheckIn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1366,20 +1488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/service/account/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1402,24 +1510,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="148" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="62" column="37" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1443,30 +1538,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="123" column="47" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/images/icon_inclusion.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="55" column="45" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/pom.xml">
@@ -1510,11 +1584,76 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="123" column="47" selection-start-line="123" selection-start-column="29" selection-end-line="123" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="91" column="91" selection-start-line="91" selection-start-column="91" selection-end-line="91" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="63" column="58" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rest-service/src/main/java/com/blinch/server/SecurityConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="75" column="28" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        <state relative-caret-position="205">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-service/src/main/resources/static/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,10 @@
 package com.blinch.server.task;
 
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.AmazonServiceException;
+import com.amazonaws.auth.PropertiesCredentials;
+import com.amazonaws.services.sns.AmazonSNS;
+import com.amazonaws.services.sns.AmazonSNSClient;
 import com.blinch.server.domain.checkin.CheckIn;
 import com.blinch.server.domain.event.Event;
 import com.blinch.server.domain.event.EventRepository;
@@ -9,6 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -34,7 +41,7 @@ public class LotteryScheduler {
         this.checkInService = checkInService;
     }
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 60000)
     //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
@@ -74,7 +81,45 @@ public class LotteryScheduler {
             System.out.println("Lunchpartners are: " + firstPortion.get(i).getUser().getFirstName() + " with " + lastPortion.get(i).getUser().getFirstName());
         }
 
+        try {
+            this.triggerPushNotificationForMatchPartners();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 //        System.out.println("LotteryScheduler component: " + dateFormat.format(new Date()));
+
+    }
+
+    private void triggerPushNotificationForMatchPartners() throws IOException {
+
+        InputStream resource = MobilePush.class.getResourceAsStream("/AwsCredentials.properties");
+
+        AmazonSNS sns = new AmazonSNSClient(new PropertiesCredentials(resource));
+
+        sns.setEndpoint("https://sns.us-west-2.amazonaws.com");
+        System.out.println("===========================================\n");
+        System.out.println("Getting Started with Amazon SNS");
+        System.out.println("===========================================\n");
+        try {
+            MobilePush sample = new MobilePush(sns);
+            sample.demoAppleSandboxAppNotification();
+        } catch (AmazonServiceException ase) {
+            System.out
+                    .println("Caught an AmazonServiceException, which means your request made it "
+                            + "to Amazon SNS, but was rejected with an error response for some reason.");
+            System.out.println("Error Message:    " + ase.getMessage());
+            System.out.println("HTTP Status Code: " + ase.getStatusCode());
+            System.out.println("AWS Error Code:   " + ase.getErrorCode());
+            System.out.println("Error Type:       " + ase.getErrorType());
+            System.out.println("Request ID:       " + ase.getRequestId());
+        } catch (AmazonClientException ace) {
+            System.out
+                    .println("Caught an AmazonClientException, which means the client encountered "
+                            + "a serious internal problem while trying to communicate with SNS, such as not "
+                            + "being able to access the network.");
+            System.out.println("Error Message: " + ace.getMessage());
+        }
 
     }
 

@@ -1,0 +1,921 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+
+/* The * selector applies styling for ALL selectors,
+	Mostly used for reseting and such */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	-webkit-text-rendering: optimizeLegibility;
+	-moz-text-rendering: optimizeLegibility;
+	-ms-text-rendering: optimizeLegibility;
+	-o-text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;
+}
+	/* General styling for all headlines */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	text-transform: ;
+
+}
+	/* Styling for paragraphs */
+p {
+	width: 100%;
+	margin: 2% auto; 
+	letter-spacing: 0.02em;
+}
+
+	/* A simple little "hack" to make all images responsive */
+img {
+	max-width: 100%; 
+}
+
+.button {
+    background-color: #6AC0AD; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 1%;
+    	border-radius: 2em;
+		-moz-border-radius: 2em;
+		-webkit-border-radius: 2em;
+}
+
+	.button:hover{
+		background-color: #9DE2D3;
+	}
+
+.quote {
+	background-color: #FC7A71;
+	text-align: center;
+	padding: 6% 0;
+	font-style: italic; 
+}
+
+/*************************** HEADER *************************/
+
+header {
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	z-index: 900;
+}
+
+/*  To get everything centered, we put the content in this tag. 
+	Margin: 0 auto; does the magic */
+
+.container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+
+/*  Header fade in */
+.bg {
+  width: 100%;
+  height: 75px;
+  opacity: 1;
+}
+
+.show {
+  opacity: 1;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 4, 0, 0.07);
+}
+
+
+.transition {    
+  -webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+
+
+
+
+/* Styling for the navigation */
+
+
+
+nav  {
+	width: 60%;
+	margin: 0 2%;
+	float: right;
+	padding: 0;
+}
+
+nav li {
+	font-size: 1em;
+	float: right;
+	text-align: center;
+	width: %;
+	padding: 0 2%;
+}
+
+nav li a {
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	padding: 25px 0 30px 0px;
+}
+
+
+
+.navshow{
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #435058;
+	padding: 25px 0 30px 0px;
+}
+
+/*  When we hover over the links, we want a different color
+	and a border at the bottom  */
+
+
+nav li a:hover {
+	color: #6AC0AD;
+}
+
+.opacityButton:hover{
+opacity: 0.8;
+
+}
+
+
+
+/*************************** LARGE IMAGE *************************/
+
+
+
+ 
+.largeImage {
+	width: 100%; /* 100% of the browser */
+	height: 100vh; /* = 100% of the browser size */
+	padding: 0px;
+	background: url("../images/heroImage.jpg"); /* Here we specify the background image */
+	background-position: center top; /* With this property, we can specify the position of the background image */
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative; /* Must be specified for centering the .introContainer */
+	overflow: scroll;
+	background-color: #455156;
+}
+
+.introContainer {
+	height: 10em;
+	/* This little "hack" makes it perfectly centered within its parent tag */
+	width: 60%;
+	margin: auto;
+  	position: absolute;
+  	padding-top: 0%;
+  	top: 0%; left: 0; bottom: 0; right: 0;
+}
+
+
+/* This is the Profile picture */
+
+
+.avatar {
+	max-width: 400px;
+	margin: 0 auto;
+	padding-top: 6%;
+	
+}
+
+.wrapper_logo {
+	width: 12em;
+	padding: 1.1em 2em;
+	float: left;
+}
+
+
+.logo {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.logoWhite path {
+	fill: #3D4959;
+	position: relative;
+}
+
+
+.intro {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 3em;
+	line-height: 1.0em;
+	padding: 0%;
+	color: #ffffff;
+}
+
+/* Just some styling to make the fab ampersand */
+.ampersand {
+	font-family: Baskerville, serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* To change color of headlines */ 
+.highlighted {
+	color: #469AB7;
+}
+
+h2 .highlighted {
+	color: #469AB7;
+}
+
+.tagline {
+	color: #fff;
+	margin: -2% auto;
+	width: 100%;
+	padding: 0 8%;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 1.6em;
+	opacity: 0.8;
+	text-align: center;
+
+}
+
+/*************************** ABOUT SECTION *************************/
+
+/* Styling for all sections */
+#about {
+	clear: both;
+	margin: 0px auto;
+	padding: 0% 0 10% 0;
+	width: 100%;
+}
+
+#work {
+	clear: both;
+	background-color:  #eeeeee;
+	width: 100%;
+	padding: 6% 0 10% 0;
+	overflow: visible;
+}
+
+#contact {
+	clear: both;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.metaInformation {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	clear: both;
+	margin: 0px auto;
+	max-width: 700px;
+	color: #3D4959;
+	padding: 8% 0%;
+	letter-spacing: 0.02em;
+	line-height: 1.6em;
+	text-align: center;
+
+}
+
+.metaInformation h2{
+	color: #FC7A71;
+	margin: 5%;
+}
+
+iframe {
+	margin: 0 auto;
+	height: 400px;
+}
+ 
+
+
+.sectionTitleBright {
+	font-size: 3em;
+	line-height: 1em;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	padding: 0% 23% ;
+	overflow: visible;
+	color: #ffffff;
+	text-align: center;
+
+
+}
+
+.sectionTitleDark {
+	font-size: 3em;
+	line-height: 1em;
+	font-family:'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	padding: 6% 0;
+	overflow: visible;
+	color: #3D4959;
+	text-align: center;
+
+}
+
+
+
+
+/*************************** WORK SECTION *************************/
+
+
+
+/* Styling for the bigger, featured project to the left */
+
+
+.featured {
+	width: 100%;
+	padding-bottom: 4%;
+
+}
+
+
+.featured figure {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin: 0px auto;
+	padding: 6%;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+    background-color: #ffffff;	
+}
+
+/* Styling for when we hover over the image */
+figcaption {
+	position: relative;
+	width: 70%;
+	margin: 0px auto;
+	height: auto;
+    color: #3D4959;
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+
+
+/* This is the Title of the Project */
+.featured figcaption h3 {
+    margin: 0px;
+    padding: 0;
+    color:#3D4959;
+    font-size: 24px;
+}
+
+
+/* This is the Read More link */
+.featured figcaption a {
+    padding: 0px;
+    color: #fd6745;
+    text-decoration: underline;
+}
+.featured figcaption a:hover{
+	color: #469AB7;
+}
+
+
+
+
+
+
+/*************************** OTHER PROJECTS ***************************/
+
+
+
+/*************************** CONTACT SECTION *************************/
+
+
+#page {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*************************** FOOTER SECTION *************************/
+
+footer {
+    position:absolute;
+    bottom: 0;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background: #3D4959;
+	padding: 2em 1em;
+}
+
+/* The text in the footer */
+footer p {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #ffffff;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.copyright {
+	text-transform: none;
+	letter-spacing: 0.02em;
+	opacity: 0.5;
+}
+
+
+
+/************************** BACK TO TOP BUTTON *************************/
+
+.cd-top {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 13px 17px;
+  color: #ffffff;
+  font-size: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  white-space: nowrap;
+  background: #6AC0AD;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* When you keep scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #6AC0AD;
+  opacity: 1;
+}
+
+
+/************************** MAILCHIMP *************************/
+
+#mc_embed_signup {
+	background: #3D4959;
+	color: #ffffff;
+	padding: 20px 15px;
+	text-align: center;
+	padding: 6% 0;
+}
+
+#mc_embed_signup_scroll{
+	margin: 0px auto;
+}
+
+
+	#mc_embed_signup  input {
+	border: medium none;
+    color: #aaaaaa;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    padding: 15px 32px;
+    margin: 1%;
+    width: 30%;
+		border-radius: 2em;
+		-moz-border-radius: 2em;
+		-webkit-border-radius: 2em;
+	}
+
+	#mc_embed_signup  .mc-field-group {
+		text-align: center;
+	}
+
+	
+
+		#mc_embed_signup  input.email { background: #fff }
+		#mc_embed_signup  input.name { background: #fff}
+		#mc_embed_signup  input[type="submit"] {
+			background: #115B87;
+			color: #fff;
+			cursor: pointer;
+
+
+		}
+		#mc_embed_signup  input[type="submit"]:hover { color: #ffffff; background-color: #9DE2D3; }
+
+
+#mc_embed_signup input.button{
+	background-color: #6AC0AD; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    margin: 1%;
+    	border-radius: 2em;
+		-moz-border-radius: 2em;
+		-webkit-border-radius: 2em;
+
+}
+
+/************************************************************************************ 
+								
+								MEDIA QUERIES 
+
+					Is used for making the website responsive.
+					The first media query is used for smaller 
+					devices, such as iPhone 4. Then we work
+					upwards, so it looks OK in all sizes. It's
+					the same selectors as above, we just change
+					the values to make it looks better on other
+					devices.
+
+
+				
+
+************************************************************************************/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 639px) {
+
+	/**************************** HEADER ***************************/
+
+	
+	.container {
+	width: 100%;
+	margin: 0 auto;
+	border: blue 1px solid;
+	}
+
+	.containerContactForm {
+	max-width: 320px;
+	margin: 0px auto;
+	background-color: #FC7A71;
+	}
+
+
+	.wrapper_logo {
+	width: 100%;
+	padding: 10px 20px 0% 20px ;
+	margin: 0 auto;
+	}
+
+	.logo {
+	width: 160px;
+	margin: 0 auto;
+	}
+
+
+
+
+	.logo {
+		margin: 0 auto;
+
+		}
+
+	.logoWhite path {
+		fill: #ffffff;
+		position: relative;
+	}
+
+	nav {
+	width: 100%;
+	clear: both;
+	display: inline;
+	margin: auto 0;
+	padding: 0%;
+	}
+
+	nav li a {
+	padding: 0px;
+	}
+
+
+	.wrapperNav {
+	max-width: 280px;
+	margin: 0 auto;
+
+	}
+
+	.navshow{
+	padding: 0;
+	}
+
+	.bg {
+	 width: 100%;
+	 height: 90px;
+	 opacity: 1;
+	}
+
+
+
+
+	/*************************** LARGE IMAGE *************************/
+
+
+
+	
+	.intro {
+	font-size: 2em;
+	line-height: 1em;
+	color: #ffffff;
+	}
+
+	.avatar {
+	max-width: 200px;
+	margin: 0 auto;
+	padding-top: 26%;
+	
+	}
+
+	.ampersand {
+	font-family: Baskerville, serif;
+	font-weight: normal;
+	}
+
+	.highlighted {
+	color: #95C763;
+	}
+
+	/*************************** ABOUT SECTION *************************/
+
+	/*section {
+		clear: both;
+		margin: 0px auto;
+		padding: 75px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.sectionTitle {
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		margin: 0;
+		overflow: visible;
+		
+	}
+
+	section p {
+		width: 100%;
+		margin: 0 auto;
+		font-size: 1em;
+		text-align:center;
+		padding: 2em;
+	}*/
+
+
+	/*************************** WORK SECTION *************************/
+
+
+
+/*************************** Featured Project *************************/
+
+
+
+
+.featured figure {
+	width: 96%;
+	margin: 0 auto;
+	padding: 10% 4% 4% 4%;
+	border: 1px solid #e2e2e2;
+}
+
+	
+
+	/*************************** FOOTER SECTION *************************/
+
+
+/***************************************************************
+
+/* For bigger smartphones (portrait and landscape) ----------- 
+
+****************************************************************/
+
+@media only screen and (min-width : 640px) and (max-width : 960px) {
+
+	header {
+		
+	}
+	
+	.container {
+	width: 100%;
+	margin: 0 auto;
+	}
+
+
+	.wrapper_logo {
+	width: 12em;
+	height: auto;
+	padding: 10px 20px 0% 20px ;
+	float: left;
+	}
+
+	.logo {
+	width: 160px;
+	margin: 0 auto;
+	}
+
+
+	nav  {
+	width: 40%;
+	margin-right: 16px;
+	float: right;
+	}
+
+
+	nav li {
+	font-size: 1em;
+	float: right;
+	text-align: center;
+	width: 33%;
+	}
+
+	nav li a {
+	display: inline;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	height: 75px;
+	padding: 25px 0 30px 0px;
+	}
+
+
+	.bg {
+	  width: 100%;
+	  height: 75px;
+	  opacity: 1;
+	}
+
+
+	/* Small screen, but retina, stuff to override above media query */
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+	only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+	only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+	only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+
+	  
+	/* TODO http://css-tricks.com/snippets/css/retina-display-media-query/ */
+
+
+	}
+
+	/*************************** LARGE IMAGE *************************/
+
+	.avatar{
+	padding-top: 6%;
+	
+	}
+
+	.largeImage {
+		width: 100%;
+		height: 100vh;
+		padding: 0px;
+		background: url("../images/heroImage.jpg");
+		background-position: center top;
+		background-repeat: no-repeat;
+		text-align: center;
+		position: relative;
+		background-color: #455156;
+	}
+
+
+
+	.intro {
+		font-size: 2.6em;
+		line-height: 1.0em;
+		color: #ffffff;
+
+	}
+
+	.ampersand {
+		font-family: Baskerville, serif;
+		font-style: italic;
+		font-weight: normal;
+		
+	}
+
+	.highlighted {
+		color: #95C763;
+	}
+
+
+
+	/*************************** ABOUT SECTION *************************/
+
+	
+
+	/*************************** WORK SECTION *************************/
+
+	.portfolio {
+		margin-top: 50px;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.featured {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 20px 0px;
+		background-color: #eeeeee;
+		overflow: hidden;
+	}
+
+	.featured figure {
+		background-color: #ffffff;
+		display: block;
+		height: auto;
+		width: 100%;
+		padding: 10%;
+		position: relative;
+	}
+
+	figcaption {
+		position: relative;
+		width: 100%;
+		height: auto;
+		bottom: 0;
+		left: 0;
+		background-color: #ffffff;
+		color: #3D4959;
+	    opacity: 1;
+	}
+
+	.featured figcaption h3 {
+	    margin: 0px;
+	    padding: 0;
+	    color: #435058;
+	    font-size: 24px;
+	}
+	 
+	.featured figcaption a {
+	    padding: 0px;
+	    background: none;
+
+	}
+
+	/*************************** OTHER PROJECTS ***************************/
+
+
+	/*************************** FOOTER SECTION *************************/
+
+
+

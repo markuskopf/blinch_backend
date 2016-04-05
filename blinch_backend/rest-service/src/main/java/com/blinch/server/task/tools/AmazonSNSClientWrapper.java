@@ -26,7 +26,7 @@ import com.amazonaws.services.sns.model.DeletePlatformApplicationRequest;
 import com.amazonaws.services.sns.model.MessageAttributeValue;
 import com.amazonaws.services.sns.model.PublishRequest;
 import com.amazonaws.services.sns.model.PublishResult;
-import com.blinch.server.task.tools.SampleMessageGenerator.Platform;
+import com.blinch.server.task.tools.NotificationMessageGenerator.Platform;
 
 public class AmazonSNSClientWrapper {
 
@@ -39,13 +39,16 @@ public class AmazonSNSClientWrapper {
 	private CreatePlatformApplicationResult createPlatformApplication(
 			String applicationName, Platform platform, String principal,
 			String credential) {
+
 		CreatePlatformApplicationRequest platformApplicationRequest = new CreatePlatformApplicationRequest();
 		Map<String, String> attributes = new HashMap<String, String>();
 		attributes.put("PlatformPrincipal", principal);
 		attributes.put("PlatformCredential", credential);
+
 		platformApplicationRequest.setAttributes(attributes);
 		platformApplicationRequest.setName(applicationName);
 		platformApplicationRequest.setPlatform(platform.name());
+
 		return snsClient.createPlatformApplication(platformApplicationRequest);
 	}
 
@@ -90,7 +93,7 @@ public class AmazonSNSClientWrapper {
 		String message = getPlatformSampleMessage(platform);
 		Map<String, String> messageMap = new HashMap<String, String>();
 		messageMap.put(platform.name(), message);
-		message = SampleMessageGenerator.jsonify(messageMap);
+		message = NotificationMessageGenerator.jsonify(messageMap);
 		// For direct publish to mobile end points, topicArn is not relevant.
 		publishRequest.setTargetArn(endpointArn);
 
@@ -118,7 +121,9 @@ public class AmazonSNSClientWrapper {
 		// platform.
 		CreatePlatformApplicationResult platformApplicationResult = createPlatformApplication(
 				applicationName, platform, principal, credential);
+
 		System.out.println(platformApplicationResult);
+
 
 		// The Platform Application Arn can be used to uniquely identify the
 		// Platform Application.
@@ -144,19 +149,11 @@ public class AmazonSNSClientWrapper {
 	private String getPlatformSampleMessage(Platform platform) {
 		switch (platform) {
 		case APNS:
-			return SampleMessageGenerator.getSampleAppleMessage();
+			return NotificationMessageGenerator.getSampleAppleMessage();
 		case APNS_SANDBOX:
-			return SampleMessageGenerator.getSampleAppleMessage();
+			return NotificationMessageGenerator.getSampleAppleMessage();
 		case GCM:
-			return SampleMessageGenerator.getSampleAndroidMessage();
-		case ADM:
-			return SampleMessageGenerator.getSampleKindleMessage();
-		case BAIDU:
-			return SampleMessageGenerator.getSampleBaiduMessage();
-		case WNS:
-			return SampleMessageGenerator.getSampleWNSMessage();
-		case MPNS:
-			return SampleMessageGenerator.getSampleMPNSMessage();
+			return NotificationMessageGenerator.getSampleAndroidMessage();
 		default:
 			throw new IllegalArgumentException("Platform not supported : "
 					+ platform.name());

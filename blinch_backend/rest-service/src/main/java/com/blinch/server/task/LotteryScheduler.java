@@ -11,6 +11,9 @@ import com.blinch.server.domain.event.EventRepository;
 import com.blinch.server.service.checkin.CheckInService;
 import com.blinch.server.service.event.EventService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -41,7 +44,7 @@ public class LotteryScheduler {
         this.checkInService = checkInService;
     }
 
-    @Scheduled(fixedRate = 60000)
+    @Scheduled(fixedRate = 3600000)
     //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
@@ -81,29 +84,28 @@ public class LotteryScheduler {
             System.out.println("Lunchpartners are: " + firstPortion.get(i).getUser().getFirstName() + " with " + lastPortion.get(i).getUser().getFirstName());
         }
 
-        try {
-            this.triggerPushNotificationForMatchPartners();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-//        System.out.println("LotteryScheduler component: " + dateFormat.format(new Date()));
-
+//        // TODO: ENBALE PUSH
+//        try {
+//            // Find device_token of user
+//            //        String deviceToken = "e8fabbe944e2764dd344e7ab1838b847da0b1a3ca1104eab23378480ff08e91c";
+//            String deviceToken = "a17890bc9a50586788faa37e75c69a595779b6e073f2e297423bbf6273065f07"; // This is 64 hex characters.
+//
+//            this.triggerPushNotificationForMatchPartner(deviceToken);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
-    private void triggerPushNotificationForMatchPartners() throws IOException {
-
-        InputStream resource = MobilePush.class.getResourceAsStream("/AwsCredentials.properties");
-
+    private void triggerPushNotificationForMatchPartner(String deviceToken) throws IOException {
+        InputStream resource = LotteryScheduler.class.getResourceAsStream("/AwsCredentials.properties");
         AmazonSNS sns = new AmazonSNSClient(new PropertiesCredentials(resource));
 
         sns.setEndpoint("https://sns.us-west-2.amazonaws.com");
-        System.out.println("===========================================\n");
-        System.out.println("Getting Started with Amazon SNS");
-        System.out.println("===========================================\n");
+
         try {
-            MobilePush sample = new MobilePush(sns);
-            sample.demoAppleSandboxAppNotification();
+            MobilePush mobilePush = new MobilePush(sns);
+            mobilePush.appleSandboxAppNotification(deviceToken);
         } catch (AmazonServiceException ase) {
             System.out
                     .println("Caught an AmazonServiceException, which means your request made it "
@@ -122,6 +124,4 @@ public class LotteryScheduler {
         }
 
     }
-
-
 }

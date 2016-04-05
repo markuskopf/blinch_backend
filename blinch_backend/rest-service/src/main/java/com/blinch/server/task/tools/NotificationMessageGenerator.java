@@ -19,14 +19,7 @@ import java.util.Map;
 
 import org.codehaus.jackson.map.ObjectMapper;
 
-public class SampleMessageGenerator {
-
-	/*
-	 * This message is delivered if a platform specific message is not specified
-	 * for the end point. It must be set. It is received by the device as the
-	 * value of the key "default".
-	 */
-	public static final String defaultMessage = "This is the default message";
+public class NotificationMessageGenerator {
 
 	private static final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -56,28 +49,16 @@ public class SampleMessageGenerator {
 		}
 	}
 
-	private static Map<String, String> getData() {
-		Map<String, String> payload = new HashMap<String, String>();
-		payload.put("message", "Hello World!");
-		return payload;
-	}
-
 	public static String getSampleAppleMessage() {
 		Map<String, Object> appleMessageMap = new HashMap<String, Object>();
 		Map<String, Object> appMessageMap = new HashMap<String, Object>();
-		appMessageMap.put("alert", "You have got email.");
-		appMessageMap.put("badge", 9);
+
+		appMessageMap.put("alert", "You have been matched by Blinch.");
+		appMessageMap.put("badge", 1);
 		appMessageMap.put("sound", "default");
 		appleMessageMap.put("aps", appMessageMap);
-		return jsonify(appleMessageMap);
-	}
 
-	public static String getSampleKindleMessage() {
-		Map<String, Object> kindleMessageMap = new HashMap<String, Object>();
-		kindleMessageMap.put("data", getData());
-		kindleMessageMap.put("consolidationKey", "Welcome");
-		kindleMessageMap.put("expiresAfter", 1000);
-		return jsonify(kindleMessageMap);
+		return jsonify(appleMessageMap);
 	}
 
 	public static String getSampleAndroidMessage() {
@@ -90,29 +71,10 @@ public class SampleMessageGenerator {
 		return jsonify(androidMessageMap);
 	}
 
-	public static String getSampleBaiduMessage() {
-		Map<String, Object> baiduMessageMap = new HashMap<String, Object>();
-		baiduMessageMap.put("title", "New Notification Received from SNS");
-		baiduMessageMap.put("description", "Hello World!");
-		return jsonify(baiduMessageMap);
+	private static Map<String, String> getData() {
+		Map<String, String> payload = new HashMap<String, String>();
+		payload.put("message", "Hello World!");
+		return payload;
 	}
 
-	public static String getSampleWNSMessage() {
-		Map<String, Object> wnsMessageMap = new HashMap<String, Object>();
-		wnsMessageMap.put("version", "1");
-		wnsMessageMap.put("value", "23");
-		return "<badge version=\"" + wnsMessageMap.get("version")
-				+ "\" value=\"" + wnsMessageMap.get("value") + "\"/>";
-	}
-
-	public static String getSampleMPNSMessage() {
-		Map<String, String> mpnsMessageMap = new HashMap<String, String>();
-		mpnsMessageMap.put("count", "23");
-		mpnsMessageMap.put("payload", "This is a tile notification");
-		return "<?xml version=\"1.0\" encoding=\"utf-8\"?><wp:Notification xmlns:wp=\"WPNotification\"><wp:Tile><wp:Count>"
-				+ mpnsMessageMap.get("count")
-				+ "</wp:Count><wp:Title>"
-				+ mpnsMessageMap.get("payload")
-				+ "</wp:Title></wp:Tile></wp:Notification>";
-	}
 }

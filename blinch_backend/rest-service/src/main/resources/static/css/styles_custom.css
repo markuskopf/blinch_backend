@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Signika:400,300,600,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
 
 /* The * selector applies styling for ALL selectors,
@@ -49,17 +47,17 @@ h1, h2, h3, h4, h5, h6 {
 	/* Styling for paragraphs */
 p {
 	width: 100%;
-	margin: 2% auto; 
+	margin: 2% auto;
 	letter-spacing: 0.02em;
 }
 
 	/* A simple little "hack" to make all images responsive */
 img {
-	max-width: 100%; 
+	max-width: 100%;
 }
 
 .button {
-    background-color: #6AC0AD; 
+    background-color: #6AC0AD;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -79,12 +77,23 @@ img {
 		background-color: #4BB29B;
 	}
 
-.quote {
-	background-color: #FC7A71;
-	text-align: center;
-	padding: 6% 0;
-	font-style: italic; 
+input {
+	border: solid 1px #dddddd;
+    color: #3D4959;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+    padding: 15px 0px;
+    margin: 1%;
+    text-align: center;
+	border-radius: 2em;
+		-moz-border-radius: 2em;
+		-webkit-border-radius: 2em;
+	width: 40%;
+    max-width: 400px;
 }
+
 
 /*************************** HEADER *************************/
 
@@ -95,7 +104,7 @@ header {
 	z-index: 900;
 }
 
-/*  To get everything centered, we put the content in this tag. 
+/*  To get everything centered, we put the content in this tag.
 	Margin: 0 auto; does the magic */
 
 .container {
@@ -119,7 +128,7 @@ header {
 }
 
 
-.transition {    
+.transition {
   -webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
@@ -188,8 +197,13 @@ opacity: 0.8;
 /*************************** LARGE IMAGE *************************/
 
 
+.quote {
+	background-color: #FC7A71;
+	text-align: center;
+	padding: 6% 0;
+	font-style: italic;
+}
 
- 
 .largeImage {
 	width: 100%; /* 100% of the browser */
 	height: 100vh; /* = 100% of the browser size */
@@ -221,7 +235,7 @@ opacity: 0.8;
 	max-width: 400px;
 	margin: 0 auto;
 	padding-top: 6%;
-	
+
 }
 
 .wrapper_logo {
@@ -258,7 +272,7 @@ opacity: 0.8;
 	font-weight: normal;
 }
 
-/* To change color of headlines */ 
+/* To change color of headlines */
 .highlighted {
 	color: #469AB7;
 }
@@ -327,7 +341,7 @@ iframe {
 	margin: 0 auto;
 	height: 400px;
 }
- 
+
 
 
 .sectionTitleBright {
@@ -382,7 +396,7 @@ iframe {
 	-webkit-margin-after: 0;
 	-webkit-margin-start: 0;
 	-webkit-margin-end: 0;
-    background-color: #ffffff;	
+    background-color: #ffffff;
 }
 
 /* Styling for when we hover over the image */
@@ -533,22 +547,6 @@ footer p {
 	text-align: left;
 }
 
-	#mc_embed_signup  input {
-	border: solid 1px #dddddd;
-    color: #3D4959;
-    font-family: Source Sans Pro;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 1em;
-    padding: 15px 0px;
-    margin: 1%;
-    text-align: center;
-	border-radius: 2em;
-		-moz-border-radius: 2em;
-		-webkit-border-radius: 2em;
-	width: 40%;
-    max-width: 400px;
-	}
 
 	#mc_embed_signup  .mc-field-group {
 
@@ -569,7 +567,7 @@ footer p {
 	#mc_embed_signup  input[type="submit"]:hover { color: #ffffff; background-color: #4BB29B; }
 
 #mc_embed_signup input.button{
-	background-color: #4BB29B;
+	background-color: #6AC0AD;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -586,6 +584,7 @@ footer p {
 	width: 40%;
     max-width: 400px;
 }
+
 
 /************************************************************************************ 
 								

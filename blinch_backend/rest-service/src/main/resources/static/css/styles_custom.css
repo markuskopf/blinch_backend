@@ -67,6 +67,8 @@ img {
     font-size: 1em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
+    width: 40%;
+    max-width: 400px;
     margin: 1%;
     	border-radius: 2em;
 		-moz-border-radius: 2em;
@@ -192,7 +194,12 @@ opacity: 0.8;
 
 }
 
+/*************************** from centered *************************/
 
+form {
+    display: inline-block;
+    text-align: center;
+}
 
 /*************************** LARGE IMAGE *************************/
 

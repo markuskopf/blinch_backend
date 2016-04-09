@@ -695,27 +695,33 @@ footer p {
 
 
 	
-	.intro {
+.intro {
 	font-size: 2em;
 	line-height: 1em;
 	color: #ffffff;
-	}
+}
 
-	.avatar {
+.introContainer {
+	width: 60%;
+	margin: auto;
+  	position: relative;
+  	padding: 30% 0;
+}
+
+.avatar {
 	max-width: 200px;
 	margin: 0 auto;
 	padding-top: 26%;
-	
-	}
+}
 
-	.ampersand {
+.ampersand {
 	font-family: Baskerville, serif;
 	font-weight: normal;
-	}
+}
 
-	.highlighted {
+.highlighted {
 	color: #95C763;
-	}
+}
 
 	/*************************** ABOUT SECTION *************************/
 

@@ -621,7 +621,6 @@ footer p {
 	.container {
 	width: 100%;
 	margin: 0 auto;
-	border: blue 1px solid;
 	}
 
 	.containerContactForm {
@@ -643,12 +642,6 @@ footer p {
 	}
 
 
-
-
-	.logo {
-		margin: 0 auto;
-
-		}
 
 	.logoWhite path {
 		fill: #ffffff;

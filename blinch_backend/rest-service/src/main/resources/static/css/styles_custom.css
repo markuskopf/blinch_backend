@@ -204,7 +204,13 @@ form {
 	background-color: #FC7A71;
 	text-align: center;
 	padding: 6% 0;
+	margin: 0 auto;
 	font-style: italic;
+}
+
+.quote h2{
+	text-align: center;
+	padding: 0 2%;
 }
 
 .largeImage {

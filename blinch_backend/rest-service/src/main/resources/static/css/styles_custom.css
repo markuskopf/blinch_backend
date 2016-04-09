@@ -60,16 +60,12 @@ img {
     background-color: #6AC0AD;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 0.8em 1.6em;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    width: 40%;
-    max-width: 400px;
-    margin: 1%;
+    margin: 2%;
     	border-radius: 2em;
 		-moz-border-radius: 2em;
 		-webkit-border-radius: 2em;

@@ -5,27 +5,10 @@ var appControllers = angular.module('appControllers', []);
 
 appControllers.controller('navigation',
 
-		function($rootScope, $scope, $http, $location, $route, sharedProperties) {
+		function($rootScope, $scope, $http, $location, $route, sharedProperties, headerStyle) {
 
-		    sharedProperties.setAnimation(false);
-
-            var bar = angular.element('#bg_id');
-            bar.addClass('show');
-
-            var loginAnchor = angular.element('#loginAnchor');
-            loginAnchor.addClass('navshow');
-
-            var logoutAnchor = angular.element('#logoutAnchor');
-            logoutAnchor.addClass('navshow');
-
-            var signupAnchor = angular.element('#signupAnchor');
-            signupAnchor.addClass('navshow');
-
-            var registerAnchor = angular.element('#registerAnchor');
-            registerAnchor.addClass('navshow');
-
-            var element = angular.element('#logo');
-            element.removeClass('logoWhite');
+            sharedProperties.setAnimation(false);
+		    headerStyle.whiteHeader();
 
 			var self = this;
 
@@ -52,7 +35,7 @@ appControllers.controller('navigation',
 					}
 
 					callback && callback($rootScope.authenticated);
-				}).error(function() {
+				}).error(function(response) {
 					$rootScope.authenticated = false;
 					callback && callback(false);
 				});
@@ -71,24 +54,7 @@ appControllers.controller('navigation',
 						$rootScope.authenticated = true;
 
                         sharedProperties.setAnimation(false);
-
-                        var bar = angular.element('#bg_id');
-                        bar.addClass('show');
-
-                        var loginAnchor = angular.element('#loginAnchor');
-                        loginAnchor.addClass('navshow');
-
-                        var logoutAnchor = angular.element('#logoutAnchor');
-                        logoutAnchor.addClass('navshow');
-
-                        var signupAnchor = angular.element('#signupAnchor');
-                        signupAnchor.addClass('navshow');
-
-                        var registerAnchor = angular.element('#registerAnchor');
-                        registerAnchor.addClass('navshow');
-
-                        var element = angular.element('#logo');
-                        element.removeClass('logoWhite');
+                        headerStyle.whiteHeader();
 
 					} else {
 						console.log("Login failed")
@@ -107,25 +73,7 @@ appControllers.controller('navigation',
 				}).error(function(data) {
 				    $rootScope.authenticated = false;
 
-				    sharedProperties.setAnimation(true);
-
-                    var bar = angular.element('#bg_id');
-                    bar.removeClass('show');
-
-                    var loginAnchor = angular.element('#loginAnchor');
-                    loginAnchor.removeClass('navshow');
-
-                    var logoutAnchor = angular.element('#logoutAnchor');
-                    logoutAnchor.removeClass('navshow');
-
-                    var signupAnchor = angular.element('#signupAnchor');
-                    signupAnchor.removeClass('navshow');
-
-                    var registerAnchor = angular.element('#registerAnchor');
-                    registerAnchor.removeClass('navshow');
-
-                    var element = angular.element('#logo');
-                    element.addClass('logoWhite');
+				    headerStyle.coloredHeader();
 				});
 			}
 });
@@ -133,94 +81,22 @@ appControllers.controller('navigation',
 
 appControllers.controller('home',
 
-    function($rootScope, $scope, $http, $window, sharedProperties) {
+    function($rootScope, $scope, $http, $window, sharedProperties, headerStyle) {
 
             if($rootScope.authenticated == false) {
                 sharedProperties.setAnimation(true);
-
-                var bar = angular.element('#bg_id');
-                            bar.removeClass('show');
-
-                            var loginAnchor = angular.element('#loginAnchor');
-                            loginAnchor.removeClass('navshow');
-
-                            var logoutAnchor = angular.element('#logoutAnchor');
-                            logoutAnchor.removeClass('navshow');
-
-                            var signupAnchor = angular.element('#signupAnchor');
-                            signupAnchor.removeClass('navshow');
-
-                            var registerAnchor = angular.element('#registerAnchor');
-                            registerAnchor.removeClass('navshow');
-
-                            var element = angular.element('#logo');
-                            element.addClass('logoWhite');
-
+                headerStyle.coloredHeader();
             } else {
                 sharedProperties.setAnimation(false);
-                       var bg_id = angular.element('#bg_id');
-                       bg_id.addClass('show');
-
-                       var loginAnchor = angular.element('#loginAnchor');
-                       loginAnchor.addClass('navshow');
-
-                       var logoutAnchor = angular.element('#logoutAnchor');
-                       logoutAnchor.addClass('navshow');
-
-                       var signupAnchor = angular.element('#signupAnchor');
-                       signupAnchor.addClass('navshow');
-
-                       var registerAnchor = angular.element('#registerAnchor');
-                       registerAnchor.addClass('navshow');
-
-                       var element = angular.element('#logo');
-                       element.removeClass('logoWhite');
+                headerStyle.whiteHeader();
             }
 
-
-
             angular.element($window).bind("scroll", function() {
-
                     if (sharedProperties.getAnimation()) {
                         if ($window.pageYOffset > 0) {
-
-                            var bar = angular.element('#bg_id');
-                            bar.addClass('show');
-
-                            var loginAnchor = angular.element('#loginAnchor');
-                            loginAnchor.addClass('navshow');
-
-                            var logoutAnchor = angular.element('#logoutAnchor');
-                            logoutAnchor.addClass('navshow');
-
-                            var signupAnchor = angular.element('#signupAnchor');
-                            signupAnchor.addClass('navshow');
-
-                            var registerAnchor = angular.element('#registerAnchor');
-                            registerAnchor.addClass('navshow');
-
-                            var element = angular.element('#logo');
-                            element.removeClass('logoWhite');
-
+                            headerStyle.whiteHeader();
                         } else {
-                            var bar = angular.element('#bg_id');
-                            bar.removeClass('show');
-
-                            var loginAnchor = angular.element('#loginAnchor');
-                            loginAnchor.removeClass('navshow');
-
-                            var logoutAnchor = angular.element('#logoutAnchor');
-                            logoutAnchor.removeClass('navshow');
-
-                            var signupAnchor = angular.element('#signupAnchor');
-                            signupAnchor.removeClass('navshow');
-
-                            var registerAnchor = angular.element('#registerAnchor');
-                            registerAnchor.removeClass('navshow');
-
-                            var element = angular.element('#logo');
-                            element.addClass('logoWhite');
-
+                            headerStyle.coloredHeader();
                         }
                     }
         });
@@ -232,27 +108,10 @@ appControllers.controller('home',
 
 appControllers.controller('register',
 
-        function($scope, $http, $location, $route, sharedProperties) {
+        function($scope, $http, $location, $route, sharedProperties, headerStyle) {
 
-                sharedProperties.setAnimation(false);
-
-                var bar = angular.element('#bg_id');
-                bar.addClass('show');
-
-                var loginAnchor = angular.element('#loginAnchor');
-                loginAnchor.addClass('navshow');
-
-                var logoutAnchor = angular.element('#logoutAnchor');
-                logoutAnchor.addClass('navshow');
-
-                var signupAnchor = angular.element('#signupAnchor');
-                signupAnchor.addClass('navshow');
-
-                var registerAnchor = angular.element('#registerAnchor');
-                registerAnchor.addClass('navshow');
-
-                var element = angular.element('#logo');
-                element.removeClass('logoWhite');
+            sharedProperties.setAnimation(false);
+            headerStyle.whiteHeader();
 
             var self = this;
 
@@ -299,12 +158,32 @@ appControllers.controller('datePicker',
 
 appControllers.controller('signup',
 
-        function($scope, $document, sharedProperties) {
-
+        function($scope, $document, sharedProperties, headerStyle) {
                 sharedProperties.setAnimation(false);
+                headerStyle.whiteHeader();
+        }
+);
 
-                var bar = angular.element('#bg_id');
-                bar.addClass('show');
+appControllers.factory('sharedProperties', function() {
+        var animation = true;
+
+        return {
+            getAnimation: function () {
+                return animation;
+            },
+            setAnimation: function(value) {
+                animation = value;
+            }
+        };
+});
+
+appControllers.factory('headerStyle',
+    function($document) {
+
+        return {
+             whiteHeader : function() {
+                var bgId = angular.element('#bg_id');
+                bgId.addClass('show');
 
                 var loginAnchor = angular.element('#loginAnchor');
                 loginAnchor.addClass('navshow');
@@ -320,18 +199,26 @@ appControllers.controller('signup',
 
                 var element = angular.element('#logo');
                 element.removeClass('logoWhite');
+             },
+
+             coloredHeader : function() {
+                var bar = angular.element('#bg_id');
+                bar.removeClass('show');
+
+                var loginAnchor = angular.element('#loginAnchor');
+                loginAnchor.removeClass('navshow');
+
+                var logoutAnchor = angular.element('#logoutAnchor');
+                logoutAnchor.removeClass('navshow');
+
+                var signupAnchor = angular.element('#signupAnchor');
+                signupAnchor.removeClass('navshow');
+
+                var registerAnchor = angular.element('#registerAnchor');
+                registerAnchor.removeClass('navshow');
+
+                var element = angular.element('#logo');
+                element.addClass('logoWhite');
+             }
         }
-);
-
-appControllers.factory('sharedProperties', function() {
-        var animation = true;
-
-        return {
-            getAnimation: function () {
-                return animation;
-            },
-            setAnimation: function(value) {
-                animation = value;
-            }
-        };
 });

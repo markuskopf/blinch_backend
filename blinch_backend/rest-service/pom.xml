@@ -54,6 +54,9 @@
         <resources>
             <resource>
                 <directory>${project.basedir}/src/main/resources</directory>
+                <excludes>
+                    <exclude>**/*.js</exclude>
+                </excludes>
             </resource>
             <resource>
                 <directory>${project.build.directory}/generated-resources</directory>
@@ -64,8 +67,10 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
+
                 <executions>
                     <execution>
                         <!-- Serves *only* to filter the wro.xml so it can get an absolute
@@ -87,6 +92,7 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
@@ -105,7 +111,7 @@
                     <jsDestinationFolder>${project.build.directory}/generated-resources/static/js</jsDestinationFolder>
                     <wroFile>${basedir}/src/main/wro/wro.xml</wroFile>
                     <extraConfigFile>${basedir}/src/main/wro/wro.properties</extraConfigFile>
-                    <contextFolder>${basedir}/src/main/wro</contextFolder>
+                    <contextFolder>${basedir}/src/main</contextFolder>
                 </configuration>
                 <dependencies>
                     <dependency>

@@ -45,7 +45,6 @@ public class LotteryScheduler {
     }
 
     @Scheduled(cron="0 0 11 * * *")
-    //@Scheduled(cron = "0/5 * * * * ?")
     public void reportCurrentTime() {
         // TODO: Check which users are checked-in and match respectively two and inform.
 
@@ -86,8 +85,9 @@ public class LotteryScheduler {
 
         try {
             // Find device_token of user
-            //        String deviceToken = "e8fabbe944e2764dd344e7ab1838b847da0b1a3ca1104eab23378480ff08e91c";
-            String deviceToken = "a17890bc9a50586788faa37e75c69a595779b6e073f2e297423bbf6273065f07"; // This is 64 hex characters.
+            //        String deviceToken = "e8fabbe944e2764dd344e7ab1838b847da0b1a3ca1104eab23378480ff08e91c"; PushDemo Tanja
+//            String deviceToken = "a17890bc9a50586788faa37e75c69a595779b6e073f2e297423bbf6273065f07"; // This is 64 hex characters. PushDemo Markus
+            String deviceToken = "70cddd4230a0c0cec198ffa6dbded56130a247f14656ff8212ecdb4ee106324b"; // BlinchApp Token Markus
 
             this.triggerPushNotificationForMatchPartner(deviceToken);
         } catch (IOException e) {

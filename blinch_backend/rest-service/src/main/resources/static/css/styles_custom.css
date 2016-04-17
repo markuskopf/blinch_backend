@@ -36,6 +36,7 @@ html, body {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 300;
+	padding-bottom: -4em;
 }
 	/* General styling for all headlines */
 h1, h2, h3, h4, h5, h6 {
@@ -379,6 +380,12 @@ iframe {
 }
 
 
+.wrapperContent{
+	min-height: 100%;
+	height: auto !important;
+	margin: 0 auto -4em;
+}
+
 
 
 /*************************** WORK SECTION *************************/
@@ -462,7 +469,11 @@ figcaption {
 
 /*************************** FOOTER SECTION *************************/
 
-footer {
+.pushdownFooter, .customFooter{
+	height: 4em;
+}
+
+.customFooter {
     bottom: 0;
 	width: 100%;
 	height: auto;
@@ -472,7 +483,7 @@ footer {
 }
 
 /* The text in the footer */
-footer p {
+.customFooter p {
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;

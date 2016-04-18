@@ -57,7 +57,7 @@ img {
 	max-width: 100%;
 }
 
-.button {
+.customButton {
     background-color: #6AC0AD;
     color: white;
     padding: 0.8em 1.6em;
@@ -73,7 +73,7 @@ img {
 		-webkit-border-radius: 2em;
 }
 
-	.button:hover{
+	.customButton:hover{
 		background-color: #4BB29B;
 	}
 
@@ -590,7 +590,7 @@ figcaption {
 
 	#mc_embed_signup  input[type="submit"]:hover { color: #ffffff; background-color: #4BB29B; }
 
-#mc_embed_signup input.button{
+#mc_embed_signup input.customButton{
 	background-color: #6AC0AD;
     color: white;
     padding: 15px 32px;

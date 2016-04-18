@@ -1,8 +1,11 @@
 package com.blinch.server.web;
 
 import com.blinch.server.domain.customer.User;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -36,9 +39,11 @@ public class LoginController {
         return "result";
     }
 
+    @RequestMapping(value = "/user", method = RequestMethod.GET)
+    public String user(ModelMap model, Principal principal) {
+        String name = principal.getName(); //get logged in username
+        model.addAttribute("username", name);
 
-    @RequestMapping("/user")
-    public Principal user(Principal user) {
-        return user;
+        return "You're successful logged in...";
     }
 }

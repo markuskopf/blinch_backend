@@ -26,7 +26,7 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-outline: none;
+	outline: none;
 }
 
 html, body {
@@ -84,14 +84,15 @@ input {
     font-style: italic;
     font-size: 1em;
     padding: 15px 0px;
-    margin: 1%;
+    margin: 0.4em;
     text-align: center;
 	border-radius: 2em;
 		-moz-border-radius: 2em;
 		-webkit-border-radius: 2em;
-	width: 40%;
+	width: 80%;
     max-width: 400px;
 }
+
 
 
 /*************************** HEADER *************************/
@@ -368,15 +369,15 @@ iframe {
 }
 
 .sectionTitleDark {
+	color: #3D4959;
 	font-size: 3em;
 	line-height: 1em;
 	font-family:'Source Sans Pro', sans-serif;
 	font-weight: 300;
+	margin: 0.5em auto;
 	padding: 6% 0;
 	overflow: visible;
-	color: #3D4959;
 	text-align: center;
-
 }
 
 
@@ -551,7 +552,7 @@ figcaption {
 
 #mc_embed_signup_scroll .sectionTitleDark{
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 0.5 auto;
 	padding: 0;
 	text-decoration: center;
 }
@@ -574,8 +575,6 @@ figcaption {
 		background: #115B87;
 		color: #fff;
 		cursor: pointer;
-
-
 	}
 
 	#mc_embed_signup  input[type="submit"]:hover { color: #ffffff; background-color: #4BB29B; }
@@ -595,7 +594,7 @@ figcaption {
     border-radius: 2em;
 		-moz-border-radius: 2em;
 		-webkit-border-radius: 2em;
-	width: 40%;
+	width: 80%;
     max-width: 400px;
 }
 

@@ -622,10 +622,6 @@ figcaption {
 
 	/**************************** HEADER ***************************/
 
-html, body {
-	font-size: 16px;
-}
-
 	.container {
 	width: 100%;
 	margin: 0 auto;

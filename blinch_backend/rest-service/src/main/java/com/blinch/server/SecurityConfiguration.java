@@ -40,7 +40,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic().and()
                 .authorizeRequests().antMatchers("/index.html", "/home.html", "/login.html", "/", "/images/**",
-                        "/register.html", "/signup.html", "/api/v1/users").permitAll().anyRequest().authenticated().and()
+                        "/register.html", "/signup.html", "/api/v1/users", "/googlea1903bd185372d45.html").permitAll().anyRequest().authenticated().and()
                 .logout().and()
                 .csrf().csrfTokenRepository(csrfTokenRepository()).and()
                 .addFilterAfter(csrfHeaderFilter(), CsrfFilter.class);

@@ -59,6 +59,7 @@ img {
 
 .customButton {
     background-color: #6AC0AD;
+    border: none;
     color: white;
     padding: 0.8em 1.6em;
     text-align: center;
@@ -558,14 +559,14 @@ figcaption {
 	color: #3D4959;
 	text-align: center;
 	padding: 0% 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 #mc_embed_signup_scroll .sectionTitleDark{
 	max-width: 700px;
 	padding: 0;
 	text-decoration: center;
-	margin: 1em 0;
+	margin: 1em auto;
 }
 
 #mc_embed_signup label{

@@ -68,7 +68,7 @@ img {
     font-weight: 400;
     width: 80%;
     max-width: 400px;
-    margin: 0;
+    margin-bottom: 2em;
     	border-radius: 2em;
 		-moz-border-radius: 2em;
 		-webkit-border-radius: 2em;

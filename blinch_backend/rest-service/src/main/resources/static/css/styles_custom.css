@@ -235,7 +235,7 @@ form {
 	text-align: center;
 	position: relative; /* Must be specified for centering the .introContainer */
 	overflow: scroll;
-	background-color: #455156;
+	background-color: #4F5B69; /* ( Same as 90% blue overlay on picture) */
 }
 
 .introContainer {
@@ -876,7 +876,7 @@ figcaption {
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		background-color: #455156;
+
 	}
 
 
